@@ -1,0 +1,97 @@
+On iteration:  0
+RESETTING ENVIRONMENT
+Logging to logs/test_run/PPO_0
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 6.07e+03 |
+|    ep_rew_mean     | -315     |
+| time/              |          |
+|    fps             | 12       |
+|    iterations      | 1        |
+|    time_elapsed    | 164      |
+|    total_timesteps | 43008    |
+---------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 6.07e+03   |
+|    ep_rew_mean          | -315       |
+| time/                   |            |
+|    fps                  | 9          |
+|    iterations           | 2          |
+|    time_elapsed         | 447        |
+|    total_timesteps      | 45056      |
+| train/                  |            |
+|    approx_kl            | 0.11290031 |
+|    clip_fraction        | 0.557      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.35      |
+|    explained_variance   | -0.849     |
+|    learning_rate        | 0.0003     |
+|    loss                 | 0.00816    |
+|    n_updates            | 210        |
+|    policy_gradient_loss | -0.0616    |
+|    value_loss           | 0.0861     |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 6.07e+03    |
+|    ep_rew_mean          | -315        |
+| time/                   |             |
+|    fps                  | 8           |
+|    iterations           | 3           |
+|    time_elapsed         | 692         |
+|    total_timesteps      | 47104       |
+| train/                  |             |
+|    approx_kl            | 0.118203685 |
+|    clip_fraction        | 0.547       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.32       |
+|    explained_variance   | 0.129       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.106      |
+|    n_updates            | 220         |
+|    policy_gradient_loss | -0.0716     |
+|    value_loss           | 0.278       |
+-----------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 6.07e+03   |
+|    ep_rew_mean          | -315       |
+| time/                   |            |
+|    fps                  | 9          |
+|    iterations           | 4          |
+|    time_elapsed         | 906        |
+|    total_timesteps      | 49152      |
+| train/                  |            |
+|    approx_kl            | 0.15622719 |
+|    clip_fraction        | 0.549      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.31      |
+|    explained_variance   | 0.216      |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.112     |
+|    n_updates            | 230        |
+|    policy_gradient_loss | -0.0709    |
+|    value_loss           | 0.593      |
+----------------------------------------
+RESETTING ENVIRONMENT
+Traceback (most recent call last):
+  File "load-train-model.py", line 44, in <module>
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\ppo\ppo.py", line 310, in learn
+    return super().learn(
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 247, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 175, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\vec_env\vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 43, in step_wait
+    obs, self.buf_rews[env_idx], self.buf_dones[env_idx], self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\sc2env.py", line 26, in step
+    with open('state_rwd_action.pkl', 'rb') as f:
+KeyboardInterrupt

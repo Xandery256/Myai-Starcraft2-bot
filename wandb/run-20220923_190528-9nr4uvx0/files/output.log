@@ -1,0 +1,30 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+On iteration:  0
+RESETTING ENVIRONMENT
+Logging to logs/test_run3/PPO_0
+-----------------------------
+| time/              |      |
+|    fps             | 14   |
+|    iterations      | 1    |
+|    time_elapsed    | 142  |
+|    total_timesteps | 2048 |
+-----------------------------
+Traceback (most recent call last):
+  File "train.py", line 45, in <module>
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\ppo\ppo.py", line 310, in learn
+    return super().learn(
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 267, in learn
+    self.train()
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\ppo\ppo.py", line 272, in train
+    th.nn.utils.clip_grad_norm_(self.policy.parameters(), self.max_grad_norm)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\utils\clip_grad.py", line 42, in clip_grad_norm_
+    total_norm = torch.norm(torch.stack([torch.norm(p.grad.detach(), norm_type).to(device) for p in parameters]), norm_type)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\nn\utils\clip_grad.py", line 42, in <listcomp>
+    total_norm = torch.norm(torch.stack([torch.norm(p.grad.detach(), norm_type).to(device) for p in parameters]), norm_type)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\torch\functional.py", line 1451, in norm
+    return _VF.norm(input, p, dim=_dim, keepdim=keepdim)  # type: ignore[attr-defined]
+KeyboardInterrupt

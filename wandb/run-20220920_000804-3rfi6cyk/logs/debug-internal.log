@@ -1,0 +1,218 @@
+2022-09-20 00:08:04,352 INFO    StreamThr :19184 [internal.py:wandb_internal():88] W&B internal server running at pid: 19184, started at: 2022-09-20 00:08:04.351579
+2022-09-20 00:08:04,354 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: status
+2022-09-20 00:08:04,358 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: status
+2022-09-20 00:08:04,363 INFO    WriterThread:19184 [datastore.py:open_for_write():75] open: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\run-3rfi6cyk.wandb
+2022-09-20 00:08:04,363 DEBUG   SenderThread:19184 [sender.py:send():301] send: header
+2022-09-20 00:08:04,366 DEBUG   SenderThread:19184 [sender.py:send():301] send: run
+2022-09-20 00:08:04,594 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: check_version
+2022-09-20 00:08:04,603 INFO    SenderThread:19184 [dir_watcher.py:__init__():216] watching files in: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files
+2022-09-20 00:08:04,603 INFO    SenderThread:19184 [sender.py:_start_run_threads():912] run started: 3rfi6cyk with start time 1663646884.351579
+2022-09-20 00:08:04,603 DEBUG   SenderThread:19184 [sender.py:send():301] send: summary
+2022-09-20 00:08:04,604 INFO    SenderThread:19184 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 00:08:04,604 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: check_version
+2022-09-20 00:08:04,707 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: run_start
+2022-09-20 00:08:04,734 DEBUG   HandlerThread:19184 [meta.py:__init__():34] meta init
+2022-09-20 00:08:04,734 DEBUG   HandlerThread:19184 [meta.py:__init__():49] meta init done
+2022-09-20 00:08:04,734 DEBUG   HandlerThread:19184 [meta.py:probe():215] probe
+2022-09-20 00:08:04,779 DEBUG   HandlerThread:19184 [git.py:repo():40] git repository is invalid
+2022-09-20 00:08:04,779 DEBUG   HandlerThread:19184 [meta.py:_save_code():87] save code
+2022-09-20 00:08:04,781 DEBUG   HandlerThread:19184 [meta.py:_save_code():108] save code done
+2022-09-20 00:08:04,781 DEBUG   HandlerThread:19184 [meta.py:_save_pip():53] save pip
+2022-09-20 00:08:04,782 DEBUG   HandlerThread:19184 [meta.py:_save_pip():67] save pip done
+2022-09-20 00:08:04,782 DEBUG   HandlerThread:19184 [meta.py:probe():253] probe done
+2022-09-20 00:08:04,845 DEBUG   SenderThread:19184 [sender.py:send():301] send: files
+2022-09-20 00:08:04,845 INFO    SenderThread:19184 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-09-20 00:08:04,846 INFO    SenderThread:19184 [sender.py:_save_file():1155] saving file code\train.py with policy now
+2022-09-20 00:08:04,861 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:08:04,862 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:08:04,983 INFO    Thread-22 :19184 [upload_job.py:push():119] Skipped uploading C:\Users\ary93\AppData\Local\Temp\tmpv5ggz6luwandb\3gounegd-code/train.py
+2022-09-20 00:08:04,986 DEBUG   SenderThread:19184 [sender.py:send():301] send: telemetry
+2022-09-20 00:08:05,309 INFO    Thread-21 :19184 [upload_job.py:push():139] Uploaded file C:\Users\ary93\AppData\Local\Temp\tmpv5ggz6luwandb\220tu6m6-wandb-metadata.json
+2022-09-20 00:08:05,469 INFO    HandlerThread:19184 [handler.py:handle_tbrecord():724] handling tbrecord: tbrecord {
+  log_dir: "logs/test_run/PPO_0"
+  save: true
+}
+control {
+  relay_id: "0b7ab49472df4539a2447528c58b4c3f"
+}
+_info {
+  stream_id: "3rfi6cyk"
+}
+
+2022-09-20 00:08:05,470 DEBUG   HandlerThread:19184 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2022-09-20 00:08:05,516 DEBUG   SenderThread:19184 [sender.py:send():301] send: tbrecord
+2022-09-20 00:08:05,519 DEBUG   Thread-24 :19184 [tb_watcher.py:_process_events():274] Encountered tensorboard directory watcher error: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\ary93\\OneDrive - Bob Jones University\\Year 4 S1\\CpS 499\\MyAi\\logs\\test_run\\PPO_0\\events.out.tfevents.1663646885.XANDER-LAPTOP.16648.0' -> 'C:\\Users\\ary93\\OneDrive - Bob Jones University\\Year 4 S1\\CpS 499\\MyAi\\wandb\\run-20220920_000804-3rfi6cyk\\files\\events.out.tfevents.1663646885.XANDER-LAPTOP.16648.0'
+2022-09-20 00:08:05,611 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\output.log
+2022-09-20 00:08:05,612 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\code\train.py
+2022-09-20 00:08:05,612 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-metadata.json
+2022-09-20 00:08:05,612 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-summary.json
+2022-09-20 00:08:05,613 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\requirements.txt
+2022-09-20 00:08:05,613 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\code
+2022-09-20 00:08:07,631 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\output.log
+2022-09-20 00:08:19,988 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:08:19,989 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:08:35,085 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:08:35,086 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:08:38,571 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:08:38,949 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\config.yaml
+2022-09-20 00:08:53,468 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:08:53,468 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:09:08,567 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:09:08,567 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:09:09,237 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:09:23,691 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:09:23,691 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:09:38,796 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:09:38,796 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:09:42,584 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:09:53,912 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:09:53,913 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:10:09,548 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:10:09,548 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:10:15,900 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:10:24,650 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:10:24,650 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:10:39,759 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:10:39,759 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:10:48,981 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:10:54,861 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:10:54,863 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:11:09,974 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:11:09,974 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:11:22,285 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:11:25,072 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:11:25,072 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:11:40,170 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:11:40,171 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:11:55,267 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:11:55,267 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:11:55,446 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:12:10,368 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:12:10,369 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:12:18,291 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:18,291 DEBUG   SenderThread:19184 [sender.py:send():301] send: exit
+2022-09-20 00:12:18,291 INFO    SenderThread:19184 [sender.py:send_exit():437] handling exit code: 255
+2022-09-20 00:12:18,291 INFO    SenderThread:19184 [sender.py:send_exit():439] handling runtime: 253
+2022-09-20 00:12:18,293 INFO    SenderThread:19184 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 00:12:18,294 INFO    SenderThread:19184 [sender.py:send_exit():445] send defer
+2022-09-20 00:12:18,294 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:18,295 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:18,295 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 0
+2022-09-20 00:12:18,295 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:18,295 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-09-20 00:12:18,296 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 1
+2022-09-20 00:12:18,296 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:18,296 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 1
+2022-09-20 00:12:18,387 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:18,387 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-09-20 00:12:18,387 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 2
+2022-09-20 00:12:18,387 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:18,388 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 2
+2022-09-20 00:12:18,388 DEBUG   SenderThread:19184 [sender.py:send():301] send: stats
+2022-09-20 00:12:18,388 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:18,388 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-09-20 00:12:18,388 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 3
+2022-09-20 00:12:18,389 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:18,389 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 3
+2022-09-20 00:12:18,868 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-summary.json
+2022-09-20 00:12:20,879 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\output.log
+2022-09-20 00:12:24,595 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:24,595 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:24,595 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-09-20 00:12:24,595 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 4
+2022-09-20 00:12:24,596 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:24,596 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:24,596 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:24,596 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:24,597 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 4
+2022-09-20 00:12:24,597 DEBUG   SenderThread:19184 [sender.py:send():301] send: summary
+2022-09-20 00:12:24,598 INFO    SenderThread:19184 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 00:12:24,599 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:24,599 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-09-20 00:12:24,599 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 5
+2022-09-20 00:12:24,599 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:24,599 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 5
+2022-09-20 00:12:24,599 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:24,599 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-09-20 00:12:24,599 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 6
+2022-09-20 00:12:24,600 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:24,600 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 6
+2022-09-20 00:12:24,600 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:24,600 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-09-20 00:12:24,704 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:24,924 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-summary.json
+2022-09-20 00:12:26,433 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 7
+2022-09-20 00:12:26,433 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:26,434 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:26,434 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 7
+2022-09-20 00:12:26,435 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:26,435 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-09-20 00:12:26,435 INFO    SenderThread:19184 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-20 00:12:26,545 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:26,943 INFO    SenderThread:19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\output.log
+2022-09-20 00:12:26,944 INFO    SenderThread:19184 [dir_watcher.py:finish():392] scan: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files
+2022-09-20 00:12:26,944 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\config.yaml config.yaml
+2022-09-20 00:12:26,944 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\output.log output.log
+2022-09-20 00:12:26,945 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\requirements.txt requirements.txt
+2022-09-20 00:12:26,950 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-metadata.json wandb-metadata.json
+2022-09-20 00:12:26,950 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-summary.json wandb-summary.json
+2022-09-20 00:12:26,960 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\code\train.py code\train.py
+2022-09-20 00:12:26,961 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 8
+2022-09-20 00:12:26,961 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:26,961 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:26,961 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 8
+2022-09-20 00:12:26,962 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:26,963 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-09-20 00:12:26,963 INFO    SenderThread:19184 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-20 00:12:27,071 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,071 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,179 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,179 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,287 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,287 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,387 INFO    Thread-27 :19184 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\requirements.txt
+2022-09-20 00:12:27,397 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,398 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,438 INFO    Thread-26 :19184 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\output.log
+2022-09-20 00:12:27,506 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,506 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,532 INFO    Thread-28 :19184 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\wandb-summary.json
+2022-09-20 00:12:27,585 INFO    Thread-25 :19184 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\files\config.yaml
+2022-09-20 00:12:27,618 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,618 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,730 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,730 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,794 INFO    Thread-16 :19184 [sender.py:transition_state():458] send defer: 9
+2022-09-20 00:12:27,794 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:27,794 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 9
+2022-09-20 00:12:27,794 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:27,794 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-09-20 00:12:27,842 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:27,995 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 10
+2022-09-20 00:12:27,995 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:27,996 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:27,996 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 10
+2022-09-20 00:12:27,996 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:27,996 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-09-20 00:12:27,997 INFO    SenderThread:19184 [sender.py:transition_state():458] send defer: 11
+2022-09-20 00:12:27,997 DEBUG   SenderThread:19184 [sender.py:send():301] send: final
+2022-09-20 00:12:27,997 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:12:27,997 INFO    HandlerThread:19184 [handler.py:handle_request_defer():161] handle defer: 11
+2022-09-20 00:12:27,997 DEBUG   SenderThread:19184 [sender.py:send():301] send: footer
+2022-09-20 00:12:27,998 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:12:27,998 INFO    SenderThread:19184 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-09-20 00:12:28,098 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:12:28,098 DEBUG   SenderThread:19184 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:12:28,099 INFO    SenderThread:19184 [file_pusher.py:join():173] waiting for file pusher
+2022-09-20 00:12:28,394 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: sampled_history
+2022-09-20 00:12:28,395 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: get_summary
+2022-09-20 00:12:28,395 INFO    MainThread:19184 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-20 00:12:28,395 INFO    MainThread:19184 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-20 00:12:28,395 INFO    MainThread:19184 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-09-20 00:12:28,400 DEBUG   HandlerThread:19184 [handler.py:handle_request():138] handle_request: shutdown
+2022-09-20 00:12:28,400 INFO    HandlerThread:19184 [handler.py:finish():807] shutting down handler
+2022-09-20 00:12:29,004 INFO    WriterThread:19184 [datastore.py:close():279] close: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000804-3rfi6cyk\run-3rfi6cyk.wandb
+2022-09-20 00:12:29,305 INFO    SenderThread:19184 [sender.py:finish():1315] shutting down sender
+2022-09-20 00:12:29,305 INFO    SenderThread:19184 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-20 00:12:29,305 INFO    SenderThread:19184 [file_pusher.py:join():173] waiting for file pusher
+2022-09-20 00:12:29,413 INFO    MainThread:19184 [internal.py:handle_exit():78] Internal process exited

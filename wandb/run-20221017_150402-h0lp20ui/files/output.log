@@ -1,0 +1,8 @@
+
+RESETTING ENVIRONMENT
+Traceback (most recent call last):
+  File "C:\Users\yerke\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\load-model.py", line 45, in <module>
+    env.render()
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\core.py", line 114, in render
+    raise NotImplementedError
+NotImplementedError

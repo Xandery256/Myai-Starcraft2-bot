@@ -1,0 +1,125 @@
+On iteration:  0
+RESETTING ENVIRONMENT
+Logging to logs/test_run/PPO_0
+------------------------------
+| time/              |       |
+|    fps             | 13    |
+|    iterations      | 1     |
+|    time_elapsed    | 152   |
+|    total_timesteps | 12288 |
+------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 2           |
+|    time_elapsed         | 373         |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.068200625 |
+|    clip_fraction        | 0.461       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.71       |
+|    explained_variance   | 0.618       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.12       |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.0786     |
+|    value_loss           | 0.0909      |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 5.83e+03    |
+|    ep_rew_mean          | -398        |
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 3           |
+|    time_elapsed         | 607         |
+|    total_timesteps      | 16384       |
+| train/                  |             |
+|    approx_kl            | 0.043678116 |
+|    clip_fraction        | 0.376       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.68       |
+|    explained_variance   | 0.0745      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0524     |
+|    n_updates            | 70          |
+|    policy_gradient_loss | -0.0558     |
+|    value_loss           | 0.443       |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 5.83e+03    |
+|    ep_rew_mean          | -398        |
+| time/                   |             |
+|    fps                  | 9           |
+|    iterations           | 4           |
+|    time_elapsed         | 823         |
+|    total_timesteps      | 18432       |
+| train/                  |             |
+|    approx_kl            | 0.026620686 |
+|    clip_fraction        | 0.315       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.7        |
+|    explained_variance   | 0.00677     |
+|    learning_rate        | 0.0003      |
+|    loss                 | 34.3        |
+|    n_updates            | 80          |
+|    policy_gradient_loss | -0.0144     |
+|    value_loss           | 882         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 5.83e+03    |
+|    ep_rew_mean          | -398        |
+| time/                   |             |
+|    fps                  | 8           |
+|    iterations           | 5           |
+|    time_elapsed         | 1182        |
+|    total_timesteps      | 20480       |
+| train/                  |             |
+|    approx_kl            | 0.082260124 |
+|    clip_fraction        | 0.546       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.69       |
+|    explained_variance   | 0.124       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.123      |
+|    n_updates            | 90          |
+|    policy_gradient_loss | -0.0722     |
+|    value_loss           | 0.0687      |
+-----------------------------------------
+On iteration:  1
+Logging to logs/test_run/PPO_0
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 5.83e+03 |
+|    ep_rew_mean     | -398     |
+| time/              |          |
+|    fps             | 9        |
+|    iterations      | 1        |
+|    time_elapsed    | 207      |
+|    total_timesteps | 22528    |
+---------------------------------
+RESETTING ENVIRONMENT
+Traceback (most recent call last):
+  File "load-train-model.py", line 44, in <module>
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\ppo\ppo.py", line 310, in learn
+    return super().learn(
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 247, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 175, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\vec_env\vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 43, in step_wait
+    obs, self.buf_rews[env_idx], self.buf_dones[env_idx], self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\sc2env.py", line 27, in step
+    state_rwd_action = pickle.load(f)
+KeyboardInterrupt

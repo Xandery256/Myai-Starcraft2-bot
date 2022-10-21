@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-10-10T11:37:45.061293",
+    "startedAt": "2022-10-10T11:37:43.988270",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\yerke\\OneDrive - Bob Jones University\\Year 4 S1\\CpS 499\\MyAi\\load-train-model.py",
+    "codePath": "load-train-model.py",
+    "host": "XANDER-DESKTOP",
+    "username": "yerke",
+    "executable": "C:\\Users\\yerke\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"
+}

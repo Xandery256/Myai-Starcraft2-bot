@@ -1,0 +1,43 @@
+wandb_version: 1
+
+Machine:
+  desc: null
+  value: Puget/Desktop/v18/2
+Model:
+  desc: null
+  value: load-v16s
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.3
+    code_path: code/load-train-model.py
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.0
+    start_time: 1663726518.951474
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 16
+      - 23
+      - 35
+      4: 3.8.0
+      5: 0.13.3
+      8:
+      - 3
+      - 5
+load_model:
+  desc: null
+  value: models/test_run/10000.zip
+model_save_name:
+  desc: null
+  value: test_run
+policy:
+  desc: null
+  value: MlpPolicy

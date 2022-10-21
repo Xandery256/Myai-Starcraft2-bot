@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.0",
+    "heartbeatAt": "2022-10-14T23:00:05.928555",
+    "startedAt": "2022-10-14T23:00:04.987886",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "load-train-model.py",
+    "codePath": "load-train-model.py",
+    "host": "XANDER-LAPTOP",
+    "username": "ary93",
+    "executable": "C:\\Users\\ary93\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+}

@@ -1,0 +1,207 @@
+2022-10-11 09:08:58,673 INFO    MainThread:15788 [wandb_setup.py:_flush():76] Loading settings from C:\Users\yerke\.config\wandb\settings
+2022-10-11 09:08:58,673 INFO    MainThread:15788 [wandb_setup.py:_flush():76] Loading settings from C:\Users\yerke\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\settings
+2022-10-11 09:08:58,673 INFO    MainThread:15788 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-10-11 09:08:58,673 INFO    MainThread:15788 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'load-train-model.py', 'program': 'C:\\Users\\yerke\\OneDrive - Bob Jones University\\Year 4 S1\\CpS 499\\MyAi\\load-train-model.py'}
+2022-10-11 09:08:58,683 INFO    MainThread:15788 [wandb_init.py:_log_setup():428] Logging user logs to C:\Users\yerke\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20221011_090858-vzd7jy7g\logs\debug.log
+2022-10-11 09:08:58,683 INFO    MainThread:15788 [wandb_init.py:_log_setup():429] Logging internal logs to C:\Users\yerke\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20221011_090858-vzd7jy7g\logs\debug-internal.log
+2022-10-11 09:08:58,683 INFO    MainThread:15788 [wandb_init.py:init():462] calling init triggers
+2022-10-11 09:08:58,684 INFO    MainThread:15788 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {'Model': 'load-v16s', 'Machine': 'Puget/Desktop/v18/2', 'policy': 'MlpPolicy', 'model_save_name': 'test_run4', 'load_model': 'models/test_run4/10000.zip'}
+2022-10-11 09:08:58,684 INFO    MainThread:15788 [wandb_init.py:init():515] starting backend
+2022-10-11 09:08:58,684 INFO    MainThread:15788 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2022-10-11 09:08:58,689 INFO    MainThread:15788 [backend.py:ensure_launched():217] starting backend process...
+2022-10-11 09:08:58,733 INFO    MainThread:15788 [backend.py:ensure_launched():222] started backend process with pid: 17068
+2022-10-11 09:08:58,733 INFO    MainThread:15788 [wandb_init.py:init():525] backend started and connected
+2022-10-11 09:08:58,737 INFO    MainThread:15788 [wandb_init.py:init():596] updated telemetry
+2022-10-11 09:08:58,738 INFO    MainThread:15788 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-10-11 09:08:59,449 INFO    MainThread:15788 [wandb_run.py:_on_init():1924] communicating current version
+2022-10-11 09:08:59,670 INFO    MainThread:15788 [wandb_run.py:_on_init():1928] got version response upgrade_message: "wandb version 0.13.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-10-11 09:08:59,670 INFO    MainThread:15788 [wandb_init.py:init():662] starting run threads in backend
+2022-10-11 09:08:59,769 INFO    MainThread:15788 [wandb_run.py:_console_start():1898] atexit reg
+2022-10-11 09:08:59,770 INFO    MainThread:15788 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.WRAP
+2022-10-11 09:08:59,770 INFO    MainThread:15788 [wandb_run.py:_redirect():1808] Wrapping output streams.
+2022-10-11 09:08:59,770 INFO    MainThread:15788 [wandb_run.py:_redirect():1832] Redirects installed.
+2022-10-11 09:08:59,771 INFO    MainThread:15788 [wandb_init.py:init():688] run started, returning control to user process
+2022-10-11 09:08:59,774 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 09:27:01,186 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 09:43:38,067 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 09:59:00,605 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 10:15:40,539 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 10:31:12,073 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 10:47:13,369 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 11:00:27,413 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 11:18:15,416 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 11:33:45,843 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 11:47:05,079 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 12:02:52,189 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 12:16:39,412 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 12:30:20,557 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 12:47:58,177 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 13:01:46,805 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 13:14:45,210 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 13:26:38,098 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 13:38:25,797 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 13:50:30,950 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 14:02:09,331 INFO    MainThread:15788 [wandb_run.py:_tensorboard_callback():1244] tensorboard callback: logs/test_run4/PPO_0, True
+2022-10-11 14:07:36,617 INFO    MainThread:15788 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 1
+2022-10-11 14:07:36,617 INFO    MainThread:15788 [wandb_run.py:_restore():1839] restore
+2022-10-11 14:07:37,167 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1707
+  total_bytes: 1707
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:42,278 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: None
+2022-10-11 14:07:43,543 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1707
+  total_bytes: 1707
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:43,837 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1707
+  total_bytes: 1707
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:44,435 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1707
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:44,551 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1707
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:44,659 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1707
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:44,765 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 3068
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:44,870 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:44,980 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:45,091 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:45,202 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:45,311 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:45,421 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:45,758 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+
+2022-10-11 14:07:46,254 INFO    MainThread:15788 [wandb_run.py:_on_finish():1996] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 85528
+  total_bytes: 85528
+  deduped_bytes: 1063
+}
+local_info {
+}
+
+2022-10-11 14:07:47,400 INFO    MainThread:15788 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-10-11 14:07:47,400 INFO    MainThread:15788 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-10-11 14:07:47,402 INFO    MainThread:15788 [wandb_run.py:_footer_sync_info():3060] logging synced files

@@ -1,0 +1,159 @@
+2022-09-20 00:00:34,936 INFO    StreamThr :9780 [internal.py:wandb_internal():88] W&B internal server running at pid: 9780, started at: 2022-09-20 00:00:34.935508
+2022-09-20 00:00:34,938 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: status
+2022-09-20 00:00:34,942 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: status
+2022-09-20 00:00:34,947 DEBUG   SenderThread:9780 [sender.py:send():301] send: header
+2022-09-20 00:00:34,947 INFO    WriterThread:9780 [datastore.py:open_for_write():75] open: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\run-3ki6ew6u.wandb
+2022-09-20 00:00:34,951 DEBUG   SenderThread:9780 [sender.py:send():301] send: run
+2022-09-20 00:00:35,223 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: check_version
+2022-09-20 00:00:35,225 INFO    SenderThread:9780 [dir_watcher.py:__init__():216] watching files in: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files
+2022-09-20 00:00:35,225 INFO    SenderThread:9780 [sender.py:_start_run_threads():912] run started: 3ki6ew6u with start time 1663646434.936514
+2022-09-20 00:00:35,225 DEBUG   SenderThread:9780 [sender.py:send():301] send: summary
+2022-09-20 00:00:35,226 INFO    SenderThread:9780 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 00:00:35,226 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: check_version
+2022-09-20 00:00:35,331 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: run_start
+2022-09-20 00:00:35,360 DEBUG   HandlerThread:9780 [meta.py:__init__():34] meta init
+2022-09-20 00:00:35,360 DEBUG   HandlerThread:9780 [meta.py:__init__():49] meta init done
+2022-09-20 00:00:35,361 DEBUG   HandlerThread:9780 [meta.py:probe():215] probe
+2022-09-20 00:00:35,406 DEBUG   HandlerThread:9780 [git.py:repo():40] git repository is invalid
+2022-09-20 00:00:35,406 DEBUG   HandlerThread:9780 [meta.py:_save_code():87] save code
+2022-09-20 00:00:35,408 DEBUG   HandlerThread:9780 [meta.py:_save_code():108] save code done
+2022-09-20 00:00:35,408 DEBUG   HandlerThread:9780 [meta.py:_save_pip():53] save pip
+2022-09-20 00:00:35,409 DEBUG   HandlerThread:9780 [meta.py:_save_pip():67] save pip done
+2022-09-20 00:00:35,409 DEBUG   HandlerThread:9780 [meta.py:probe():253] probe done
+2022-09-20 00:00:35,469 DEBUG   SenderThread:9780 [sender.py:send():301] send: files
+2022-09-20 00:00:35,469 INFO    SenderThread:9780 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-09-20 00:00:35,470 INFO    SenderThread:9780 [sender.py:_save_file():1155] saving file code\train.py with policy now
+2022-09-20 00:00:35,483 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 00:00:35,483 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 00:00:35,581 DEBUG   SenderThread:9780 [sender.py:send():301] send: telemetry
+2022-09-20 00:00:35,588 INFO    Thread-22 :9780 [upload_job.py:push():119] Skipped uploading C:\Users\ary93\AppData\Local\Temp\tmpsr3hgclawandb\q8fdeouz-code/train.py
+2022-09-20 00:00:35,890 INFO    Thread-21 :9780 [upload_job.py:push():139] Uploaded file C:\Users\ary93\AppData\Local\Temp\tmpsr3hgclawandb\hz1bdkc7-wandb-metadata.json
+2022-09-20 00:00:36,095 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:36,095 DEBUG   SenderThread:9780 [sender.py:send():301] send: exit
+2022-09-20 00:00:36,095 INFO    SenderThread:9780 [sender.py:send_exit():437] handling exit code: 1
+2022-09-20 00:00:36,095 INFO    SenderThread:9780 [sender.py:send_exit():439] handling runtime: 0
+2022-09-20 00:00:36,097 INFO    SenderThread:9780 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 00:00:36,098 INFO    SenderThread:9780 [sender.py:send_exit():445] send defer
+2022-09-20 00:00:36,098 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:36,099 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,099 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 0
+2022-09-20 00:00:36,100 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,100 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-09-20 00:00:36,100 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 1
+2022-09-20 00:00:36,100 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,100 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 1
+2022-09-20 00:00:36,196 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,197 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-09-20 00:00:36,197 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 2
+2022-09-20 00:00:36,197 DEBUG   SenderThread:9780 [sender.py:send():301] send: stats
+2022-09-20 00:00:36,198 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,198 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 2
+2022-09-20 00:00:36,198 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,199 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-09-20 00:00:36,199 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 3
+2022-09-20 00:00:36,199 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,199 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 3
+2022-09-20 00:00:36,199 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,200 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-09-20 00:00:36,200 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 4
+2022-09-20 00:00:36,200 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,200 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 4
+2022-09-20 00:00:36,200 DEBUG   SenderThread:9780 [sender.py:send():301] send: summary
+2022-09-20 00:00:36,201 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:36,201 INFO    SenderThread:9780 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 00:00:36,202 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,202 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-09-20 00:00:36,202 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 5
+2022-09-20 00:00:36,202 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:36,203 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,203 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 5
+2022-09-20 00:00:36,203 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,203 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-09-20 00:00:36,234 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\wandb-metadata.json
+2022-09-20 00:00:36,235 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\output.log
+2022-09-20 00:00:36,235 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\requirements.txt
+2022-09-20 00:00:36,235 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\code\train.py
+2022-09-20 00:00:36,236 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\wandb-summary.json
+2022-09-20 00:00:36,236 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\code
+2022-09-20 00:00:36,322 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:36,390 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 6
+2022-09-20 00:00:36,390 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:36,390 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:36,391 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 6
+2022-09-20 00:00:36,391 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:36,391 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-09-20 00:00:36,491 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:37,240 INFO    Thread-17 :9780 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\config.yaml
+2022-09-20 00:00:38,120 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 7
+2022-09-20 00:00:38,120 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,121 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:38,121 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 7
+2022-09-20 00:00:38,121 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:38,121 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-09-20 00:00:38,121 INFO    SenderThread:9780 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-20 00:00:38,227 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,244 INFO    SenderThread:9780 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\output.log
+2022-09-20 00:00:38,244 INFO    SenderThread:9780 [dir_watcher.py:finish():392] scan: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files
+2022-09-20 00:00:38,244 INFO    SenderThread:9780 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\config.yaml config.yaml
+2022-09-20 00:00:38,245 INFO    SenderThread:9780 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\output.log output.log
+2022-09-20 00:00:38,245 INFO    SenderThread:9780 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\requirements.txt requirements.txt
+2022-09-20 00:00:38,250 INFO    SenderThread:9780 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\wandb-metadata.json wandb-metadata.json
+2022-09-20 00:00:38,251 INFO    SenderThread:9780 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\wandb-summary.json wandb-summary.json
+2022-09-20 00:00:38,252 INFO    SenderThread:9780 [dir_watcher.py:finish():406] scan save: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\code\train.py code\train.py
+2022-09-20 00:00:38,252 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 8
+2022-09-20 00:00:38,252 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,258 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:38,258 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 8
+2022-09-20 00:00:38,259 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:38,259 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-09-20 00:00:38,259 INFO    SenderThread:9780 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-20 00:00:38,367 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,367 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,475 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,475 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,585 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,585 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,655 INFO    Thread-26 :9780 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\wandb-summary.json
+2022-09-20 00:00:38,694 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,694 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,700 INFO    Thread-23 :9780 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\config.yaml
+2022-09-20 00:00:38,703 INFO    Thread-25 :9780 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\requirements.txt
+2022-09-20 00:00:38,705 INFO    Thread-24 :9780 [upload_job.py:push():139] Uploaded file C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\files\output.log
+2022-09-20 00:00:38,802 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,802 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,913 INFO    Thread-16 :9780 [sender.py:transition_state():458] send defer: 9
+2022-09-20 00:00:38,913 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:38,914 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:38,914 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 9
+2022-09-20 00:00:38,914 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:38,914 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:38,914 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-09-20 00:00:39,023 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:39,099 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 10
+2022-09-20 00:00:39,099 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:39,100 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:39,100 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 10
+2022-09-20 00:00:39,100 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:39,100 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-09-20 00:00:39,100 INFO    SenderThread:9780 [sender.py:transition_state():458] send defer: 11
+2022-09-20 00:00:39,100 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 00:00:39,101 INFO    HandlerThread:9780 [handler.py:handle_request_defer():161] handle defer: 11
+2022-09-20 00:00:39,101 DEBUG   SenderThread:9780 [sender.py:send():301] send: final
+2022-09-20 00:00:39,101 DEBUG   SenderThread:9780 [sender.py:send():301] send: footer
+2022-09-20 00:00:39,101 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: defer
+2022-09-20 00:00:39,101 INFO    SenderThread:9780 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-09-20 00:00:39,209 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 00:00:39,209 DEBUG   SenderThread:9780 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 00:00:39,209 INFO    SenderThread:9780 [file_pusher.py:join():173] waiting for file pusher
+2022-09-20 00:00:39,505 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: sampled_history
+2022-09-20 00:00:39,506 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: get_summary
+2022-09-20 00:00:39,506 INFO    MainThread:9780 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-20 00:00:39,506 INFO    MainThread:9780 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-20 00:00:39,506 INFO    MainThread:9780 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-09-20 00:00:39,510 DEBUG   HandlerThread:9780 [handler.py:handle_request():138] handle_request: shutdown
+2022-09-20 00:00:39,510 INFO    HandlerThread:9780 [handler.py:finish():807] shutting down handler
+2022-09-20 00:00:40,116 INFO    WriterThread:9780 [datastore.py:close():279] close: C:\Users\ary93\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\wandb\run-20220920_000034-3ki6ew6u\run-3ki6ew6u.wandb
+2022-09-20 00:00:40,400 INFO    SenderThread:9780 [sender.py:finish():1315] shutting down sender
+2022-09-20 00:00:40,400 INFO    SenderThread:9780 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-20 00:00:40,400 INFO    SenderThread:9780 [file_pusher.py:join():173] waiting for file pusher
+2022-09-20 00:00:40,526 INFO    MainThread:9780 [internal.py:handle_exit():78] Internal process exited

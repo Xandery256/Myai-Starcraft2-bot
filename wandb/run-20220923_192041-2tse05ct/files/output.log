@@ -1,0 +1,28 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+On iteration:  0
+RESETTING ENVIRONMENT
+Logging to logs/test_run3/PPO_0
+-----------------------------
+| time/              |      |
+|    fps             | 14   |
+|    iterations      | 1    |
+|    time_elapsed    | 136  |
+|    total_timesteps | 2048 |
+-----------------------------
+Traceback (most recent call last):
+  File "train.py", line 45, in <module>
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\ppo\ppo.py", line 310, in learn
+    return super().learn(
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 267, in learn
+    self.train()
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\ppo\ppo.py", line 199, in train
+    for rollout_data in self.rollout_buffer.get(self.batch_size):
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\buffers.py", line 471, in get
+    yield self._get_samples(indices[start_idx : start_idx + batch_size])
+  File "C:\Users\ary93\AppData\Local\Programs\Python\Python38\lib\site-packages\stable_baselines3\common\buffers.py", line 476, in _get_samples
+    self.observations[batch_inds],
+KeyboardInterrupt

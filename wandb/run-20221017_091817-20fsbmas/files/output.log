@@ -1,0 +1,159 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+On iteration:  0
+RESETTING ENVIRONMENT
+Logging to logs/test_run7/PPO_0
+-----------------------------
+| time/              |      |
+|    fps             | 25   |
+|    iterations      | 1    |
+|    time_elapsed    | 81   |
+|    total_timesteps | 2048 |
+-----------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 17          |
+|    iterations           | 2           |
+|    time_elapsed         | 230         |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.010402903 |
+|    clip_fraction        | 0.068       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.3        |
+|    explained_variance   | -0.02       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0603     |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0189     |
+|    value_loss           | 0.00637     |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 17          |
+|    iterations           | 3           |
+|    time_elapsed         | 349         |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.022202792 |
+|    clip_fraction        | 0.196       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.28       |
+|    explained_variance   | 0.0438      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.09       |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0433     |
+|    value_loss           | 0.0302      |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.88e+03    |
+|    ep_rew_mean          | -441        |
+| time/                   |             |
+|    fps                  | 17          |
+|    iterations           | 4           |
+|    time_elapsed         | 466         |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.017463986 |
+|    clip_fraction        | 0.16        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.26       |
+|    explained_variance   | 0.29        |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0305     |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0262     |
+|    value_loss           | 0.0889      |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.88e+03    |
+|    ep_rew_mean          | -441        |
+| time/                   |             |
+|    fps                  | 17          |
+|    iterations           | 5           |
+|    time_elapsed         | 579         |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.015394262 |
+|    clip_fraction        | 0.239       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.28       |
+|    explained_variance   | -0.000202   |
+|    learning_rate        | 0.0003      |
+|    loss                 | 4.5         |
+|    n_updates            | 40          |
+|    policy_gradient_loss | 0.00155     |
+|    value_loss           | 1.04e+03    |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.88e+03    |
+|    ep_rew_mean          | -441        |
+| time/                   |             |
+|    fps                  | 17          |
+|    iterations           | 6           |
+|    time_elapsed         | 708         |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.050315812 |
+|    clip_fraction        | 0.43        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.22       |
+|    explained_variance   | -0.161      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.111      |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.0808     |
+|    value_loss           | 0.00603     |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 6.56e+03    |
+|    ep_rew_mean          | -458        |
+| time/                   |             |
+|    fps                  | 17          |
+|    iterations           | 7           |
+|    time_elapsed         | 827         |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.044976655 |
+|    clip_fraction        | 0.439       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.22       |
+|    explained_variance   | 0.163       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.112      |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.0697     |
+|    value_loss           | 0.0111      |
+-----------------------------------------
+RESETTING ENVIRONMENT
+RESETTING ENVIRONMENT
+RESETTING ENVIRONMENT
+Traceback (most recent call last):
+  File "C:\Users\yerke\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\train.py", line 45, in <module>
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\ppo\ppo.py", line 304, in learn
+    return super(PPO, self).learn(
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 250, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 178, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 43, in step_wait
+    obs, self.buf_rews[env_idx], self.buf_dones[env_idx], self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "C:\Users\yerke\AppData\Local\Programs\Python\Python310\lib\site-packages\stable_baselines3\common\monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "C:\Users\yerke\OneDrive - Bob Jones University\Year 4 S1\CpS 499\MyAi\sc2env.py", line 27, in step
+    state_rwd_action = pickle.load(f)
+KeyboardInterrupt
