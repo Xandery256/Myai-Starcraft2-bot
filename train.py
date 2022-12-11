@@ -6,7 +6,7 @@ from wandb.integration.sb3 import WandbCallback
 import wandb
 
 
-model_name = f"test_run7"
+model_name = f"test_run8"
 
 models_dir = f"models/{model_name}/"
 logdir = f"logs/{model_name}/"

@@ -6,7 +6,7 @@ from wandb.integration.sb3 import WandbCallback
 import wandb
 
 
-LOAD_MODEL = "models/test_run7/200000.zip"
+LOAD_MODEL = "models/test_run8/200000.zip"
 # Environment:
 env = Sc2Env()
 
