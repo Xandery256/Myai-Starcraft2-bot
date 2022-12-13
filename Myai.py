@@ -486,7 +486,7 @@ class Myai(BotAI):
 result = run_game(  # run_game is a function that runs the game.
     maps.get("2000AtmospheresAIE"), # the map the agents will play on
     [Bot(Race.Terran, Myai()), # runs my coded bot with the given race and agent object 
-     Computer(Race.Zerg, Difficulty.Medium)], # runs a pre-built computer agent with the given race and difficulty.
+     Computer(Race.Zerg, Difficulty.Easy)], # runs a pre-built computer agent with the given race and difficulty.
     realtime=False,
 )
 
