@@ -1,0 +1,1179 @@
+diff --git a/Myai.py b/Myai.py
+index 063fa6a..4287fb6 100644
+--- a/Myai.py
++++ b/Myai.py
+@@ -486,7 +486,7 @@ class Myai(BotAI):
+ result = run_game(  # run_game is a function that runs the game.
+     maps.get("2000AtmospheresAIE"), # the map the agents will play on
+     [Bot(Race.Terran, Myai()), # runs my coded bot with the given race and agent object 
+-     Computer(Race.Zerg, Difficulty.Medium)], # runs a pre-built computer agent with the given race and difficulty.
++     Computer(Race.Zerg, Difficulty.Easy)], # runs a pre-built computer agent with the given race and difficulty.
+     realtime=False,
+ )
+ 
+diff --git a/__pycache__/sc2env.cpython-39.pyc b/__pycache__/sc2env.cpython-39.pyc
+index 1de4c7e..17990fe 100644
+Binary files a/__pycache__/sc2env.cpython-39.pyc and b/__pycache__/sc2env.cpython-39.pyc differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663646885.XANDER-LAPTOP.16648.0 b/logs/test_run/PPO_0/events.out.tfevents.1663646885.XANDER-LAPTOP.16648.0
+deleted file mode 100644
+index 8f30319..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663646885.XANDER-LAPTOP.16648.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663647323.XANDER-LAPTOP.11584.0 b/logs/test_run/PPO_0/events.out.tfevents.1663647323.XANDER-LAPTOP.11584.0
+deleted file mode 100644
+index bd9e653..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663647323.XANDER-LAPTOP.11584.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663647376.XANDER-LAPTOP.16112.0 b/logs/test_run/PPO_0/events.out.tfevents.1663647376.XANDER-LAPTOP.16112.0
+deleted file mode 100644
+index cbbb7d3..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663647376.XANDER-LAPTOP.16112.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663647417.XANDER-LAPTOP.26640.0 b/logs/test_run/PPO_0/events.out.tfevents.1663647417.XANDER-LAPTOP.26640.0
+deleted file mode 100644
+index 2a66d12..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663647417.XANDER-LAPTOP.26640.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663647533.XANDER-LAPTOP.27480.0 b/logs/test_run/PPO_0/events.out.tfevents.1663647533.XANDER-LAPTOP.27480.0
+deleted file mode 100644
+index 787f586..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663647533.XANDER-LAPTOP.27480.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663647582.XANDER-LAPTOP.5760.0 b/logs/test_run/PPO_0/events.out.tfevents.1663647582.XANDER-LAPTOP.5760.0
+deleted file mode 100644
+index 89f26fe..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663647582.XANDER-LAPTOP.5760.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663648390.XANDER-LAPTOP.18532.0 b/logs/test_run/PPO_0/events.out.tfevents.1663648390.XANDER-LAPTOP.18532.0
+deleted file mode 100644
+index c93281b..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663648390.XANDER-LAPTOP.18532.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663648705.XANDER-LAPTOP.21360.0 b/logs/test_run/PPO_0/events.out.tfevents.1663648705.XANDER-LAPTOP.21360.0
+deleted file mode 100644
+index 2424797..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663648705.XANDER-LAPTOP.21360.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663648954.XANDER-LAPTOP.19188.0 b/logs/test_run/PPO_0/events.out.tfevents.1663648954.XANDER-LAPTOP.19188.0
+deleted file mode 100644
+index de10d45..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663648954.XANDER-LAPTOP.19188.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663650275.XANDER-LAPTOP.19188.1 b/logs/test_run/PPO_0/events.out.tfevents.1663650275.XANDER-LAPTOP.19188.1
+deleted file mode 100644
+index d172c56..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663650275.XANDER-LAPTOP.19188.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663694763.XANDER-LAPTOP.13896.0 b/logs/test_run/PPO_0/events.out.tfevents.1663694763.XANDER-LAPTOP.13896.0
+deleted file mode 100644
+index 1a91f9b..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663694763.XANDER-LAPTOP.13896.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663700037.XANDER-LAPTOP.21156.0 b/logs/test_run/PPO_0/events.out.tfevents.1663700037.XANDER-LAPTOP.21156.0
+deleted file mode 100644
+index 866f454..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663700037.XANDER-LAPTOP.21156.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663701288.XANDER-LAPTOP.21156.1 b/logs/test_run/PPO_0/events.out.tfevents.1663701288.XANDER-LAPTOP.21156.1
+deleted file mode 100644
+index c02d374..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663701288.XANDER-LAPTOP.21156.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663701948.XANDER-LAPTOP.15884.0 b/logs/test_run/PPO_0/events.out.tfevents.1663701948.XANDER-LAPTOP.15884.0
+deleted file mode 100644
+index acb951f..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663701948.XANDER-LAPTOP.15884.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663702020.XANDER-LAPTOP.27572.0 b/logs/test_run/PPO_0/events.out.tfevents.1663702020.XANDER-LAPTOP.27572.0
+deleted file mode 100644
+index fd2d832..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663702020.XANDER-LAPTOP.27572.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663702112.XANDER-LAPTOP.552.0 b/logs/test_run/PPO_0/events.out.tfevents.1663702112.XANDER-LAPTOP.552.0
+deleted file mode 100644
+index d10aacd..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663702112.XANDER-LAPTOP.552.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663702207.XANDER-LAPTOP.6632.0 b/logs/test_run/PPO_0/events.out.tfevents.1663702207.XANDER-LAPTOP.6632.0
+deleted file mode 100644
+index 7359aaf..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663702207.XANDER-LAPTOP.6632.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663703550.XANDER-LAPTOP.6632.1 b/logs/test_run/PPO_0/events.out.tfevents.1663703550.XANDER-LAPTOP.6632.1
+deleted file mode 100644
+index 1be2413..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663703550.XANDER-LAPTOP.6632.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663719984.XANDER-LAPTOP.3728.0 b/logs/test_run/PPO_0/events.out.tfevents.1663719984.XANDER-LAPTOP.3728.0
+deleted file mode 100644
+index 50e1932..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663719984.XANDER-LAPTOP.3728.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663726519.XANDER-LAPTOP.16156.0 b/logs/test_run/PPO_0/events.out.tfevents.1663726519.XANDER-LAPTOP.16156.0
+deleted file mode 100644
+index a123390..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663726519.XANDER-LAPTOP.16156.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663728024.XANDER-LAPTOP.7872.0 b/logs/test_run/PPO_0/events.out.tfevents.1663728024.XANDER-LAPTOP.7872.0
+deleted file mode 100644
+index 42455f0..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663728024.XANDER-LAPTOP.7872.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663730050.XANDER-LAPTOP.17664.0 b/logs/test_run/PPO_0/events.out.tfevents.1663730050.XANDER-LAPTOP.17664.0
+deleted file mode 100644
+index 84b8900..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663730050.XANDER-LAPTOP.17664.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663731393.XANDER-LAPTOP.17664.1 b/logs/test_run/PPO_0/events.out.tfevents.1663731393.XANDER-LAPTOP.17664.1
+deleted file mode 100644
+index fae6e6f..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663731393.XANDER-LAPTOP.17664.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663733159.XANDER-LAPTOP.5280.0 b/logs/test_run/PPO_0/events.out.tfevents.1663733159.XANDER-LAPTOP.5280.0
+deleted file mode 100644
+index b92f12a..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663733159.XANDER-LAPTOP.5280.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663758114.XANDER-LAPTOP.18336.0 b/logs/test_run/PPO_0/events.out.tfevents.1663758114.XANDER-LAPTOP.18336.0
+deleted file mode 100644
+index 3b4a4c5..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663758114.XANDER-LAPTOP.18336.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663761895.XANDER-LAPTOP.10744.0 b/logs/test_run/PPO_0/events.out.tfevents.1663761895.XANDER-LAPTOP.10744.0
+deleted file mode 100644
+index 69976f0..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663761895.XANDER-LAPTOP.10744.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663763159.XANDER-LAPTOP.10744.1 b/logs/test_run/PPO_0/events.out.tfevents.1663763159.XANDER-LAPTOP.10744.1
+deleted file mode 100644
+index 1a9d395..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663763159.XANDER-LAPTOP.10744.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663764590.XANDER-LAPTOP.10744.2 b/logs/test_run/PPO_0/events.out.tfevents.1663764590.XANDER-LAPTOP.10744.2
+deleted file mode 100644
+index afb51d9..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663764590.XANDER-LAPTOP.10744.2 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663779285.XANDER-LAPTOP.2772.0 b/logs/test_run/PPO_0/events.out.tfevents.1663779285.XANDER-LAPTOP.2772.0
+deleted file mode 100644
+index 15bb005..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663779285.XANDER-LAPTOP.2772.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663780551.XANDER-LAPTOP.2772.1 b/logs/test_run/PPO_0/events.out.tfevents.1663780551.XANDER-LAPTOP.2772.1
+deleted file mode 100644
+index fea00c6..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663780551.XANDER-LAPTOP.2772.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663781846.XANDER-LAPTOP.2772.2 b/logs/test_run/PPO_0/events.out.tfevents.1663781846.XANDER-LAPTOP.2772.2
+deleted file mode 100644
+index 99e9490..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663781846.XANDER-LAPTOP.2772.2 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663783086.XANDER-LAPTOP.2772.3 b/logs/test_run/PPO_0/events.out.tfevents.1663783086.XANDER-LAPTOP.2772.3
+deleted file mode 100644
+index ea141fe..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663783086.XANDER-LAPTOP.2772.3 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663784295.XANDER-LAPTOP.2772.4 b/logs/test_run/PPO_0/events.out.tfevents.1663784295.XANDER-LAPTOP.2772.4
+deleted file mode 100644
+index d538d7e..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663784295.XANDER-LAPTOP.2772.4 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663785758.XANDER-LAPTOP.2772.5 b/logs/test_run/PPO_0/events.out.tfevents.1663785758.XANDER-LAPTOP.2772.5
+deleted file mode 100644
+index 15d0c6f..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663785758.XANDER-LAPTOP.2772.5 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663787358.XANDER-LAPTOP.2772.6 b/logs/test_run/PPO_0/events.out.tfevents.1663787358.XANDER-LAPTOP.2772.6
+deleted file mode 100644
+index 7b56544..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663787358.XANDER-LAPTOP.2772.6 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663806774.XANDER-LAPTOP.22168.0 b/logs/test_run/PPO_0/events.out.tfevents.1663806774.XANDER-LAPTOP.22168.0
+deleted file mode 100644
+index d7e3fcf..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663806774.XANDER-LAPTOP.22168.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663806864.XANDER-LAPTOP.19256.0 b/logs/test_run/PPO_0/events.out.tfevents.1663806864.XANDER-LAPTOP.19256.0
+deleted file mode 100644
+index cf91e8c..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663806864.XANDER-LAPTOP.19256.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663808222.XANDER-LAPTOP.19256.1 b/logs/test_run/PPO_0/events.out.tfevents.1663808222.XANDER-LAPTOP.19256.1
+deleted file mode 100644
+index eaa678b..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663808222.XANDER-LAPTOP.19256.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663809309.XANDER-LAPTOP.19256.2 b/logs/test_run/PPO_0/events.out.tfevents.1663809309.XANDER-LAPTOP.19256.2
+deleted file mode 100644
+index 4206d33..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663809309.XANDER-LAPTOP.19256.2 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663810640.XANDER-LAPTOP.19256.3 b/logs/test_run/PPO_0/events.out.tfevents.1663810640.XANDER-LAPTOP.19256.3
+deleted file mode 100644
+index 1569234..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663810640.XANDER-LAPTOP.19256.3 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663811795.XANDER-LAPTOP.19256.4 b/logs/test_run/PPO_0/events.out.tfevents.1663811795.XANDER-LAPTOP.19256.4
+deleted file mode 100644
+index b7b8baf..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663811795.XANDER-LAPTOP.19256.4 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663813062.XANDER-LAPTOP.19256.5 b/logs/test_run/PPO_0/events.out.tfevents.1663813062.XANDER-LAPTOP.19256.5
+deleted file mode 100644
+index a35cb24..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663813062.XANDER-LAPTOP.19256.5 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663814036.XANDER-LAPTOP.19256.6 b/logs/test_run/PPO_0/events.out.tfevents.1663814036.XANDER-LAPTOP.19256.6
+deleted file mode 100644
+index f798fee..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663814036.XANDER-LAPTOP.19256.6 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663818134.XANDER-LAPTOP.25276.0 b/logs/test_run/PPO_0/events.out.tfevents.1663818134.XANDER-LAPTOP.25276.0
+deleted file mode 100644
+index f889e99..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663818134.XANDER-LAPTOP.25276.0 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663819295.XANDER-LAPTOP.25276.1 b/logs/test_run/PPO_0/events.out.tfevents.1663819295.XANDER-LAPTOP.25276.1
+deleted file mode 100644
+index b78145b..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663819295.XANDER-LAPTOP.25276.1 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663820578.XANDER-LAPTOP.25276.2 b/logs/test_run/PPO_0/events.out.tfevents.1663820578.XANDER-LAPTOP.25276.2
+deleted file mode 100644
+index 05cc5f9..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663820578.XANDER-LAPTOP.25276.2 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663822020.XANDER-LAPTOP.25276.3 b/logs/test_run/PPO_0/events.out.tfevents.1663822020.XANDER-LAPTOP.25276.3
+deleted file mode 100644
+index 6c97112..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663822020.XANDER-LAPTOP.25276.3 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663823081.XANDER-LAPTOP.25276.4 b/logs/test_run/PPO_0/events.out.tfevents.1663823081.XANDER-LAPTOP.25276.4
+deleted file mode 100644
+index 068f804..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663823081.XANDER-LAPTOP.25276.4 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663824247.XANDER-LAPTOP.25276.5 b/logs/test_run/PPO_0/events.out.tfevents.1663824247.XANDER-LAPTOP.25276.5
+deleted file mode 100644
+index b0d6960..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663824247.XANDER-LAPTOP.25276.5 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663825317.XANDER-LAPTOP.25276.6 b/logs/test_run/PPO_0/events.out.tfevents.1663825317.XANDER-LAPTOP.25276.6
+deleted file mode 100644
+index 89728d6..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663825317.XANDER-LAPTOP.25276.6 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663826590.XANDER-LAPTOP.25276.7 b/logs/test_run/PPO_0/events.out.tfevents.1663826590.XANDER-LAPTOP.25276.7
+deleted file mode 100644
+index 8933906..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663826590.XANDER-LAPTOP.25276.7 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663827587.XANDER-LAPTOP.25276.8 b/logs/test_run/PPO_0/events.out.tfevents.1663827587.XANDER-LAPTOP.25276.8
+deleted file mode 100644
+index 5dff961..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663827587.XANDER-LAPTOP.25276.8 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663828502.XANDER-LAPTOP.25276.9 b/logs/test_run/PPO_0/events.out.tfevents.1663828502.XANDER-LAPTOP.25276.9
+deleted file mode 100644
+index 8fc49e6..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663828502.XANDER-LAPTOP.25276.9 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663829434.XANDER-LAPTOP.25276.10 b/logs/test_run/PPO_0/events.out.tfevents.1663829434.XANDER-LAPTOP.25276.10
+deleted file mode 100644
+index 4c27a26..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663829434.XANDER-LAPTOP.25276.10 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663830355.XANDER-LAPTOP.25276.11 b/logs/test_run/PPO_0/events.out.tfevents.1663830355.XANDER-LAPTOP.25276.11
+deleted file mode 100644
+index 71c95dd..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663830355.XANDER-LAPTOP.25276.11 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663831278.XANDER-LAPTOP.25276.12 b/logs/test_run/PPO_0/events.out.tfevents.1663831278.XANDER-LAPTOP.25276.12
+deleted file mode 100644
+index 0815bd0..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663831278.XANDER-LAPTOP.25276.12 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663832191.XANDER-LAPTOP.25276.13 b/logs/test_run/PPO_0/events.out.tfevents.1663832191.XANDER-LAPTOP.25276.13
+deleted file mode 100644
+index 9bfc50c..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663832191.XANDER-LAPTOP.25276.13 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663833130.XANDER-LAPTOP.25276.14 b/logs/test_run/PPO_0/events.out.tfevents.1663833130.XANDER-LAPTOP.25276.14
+deleted file mode 100644
+index 77fbafe..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663833130.XANDER-LAPTOP.25276.14 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663834036.XANDER-LAPTOP.25276.15 b/logs/test_run/PPO_0/events.out.tfevents.1663834036.XANDER-LAPTOP.25276.15
+deleted file mode 100644
+index 5ec432a..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663834036.XANDER-LAPTOP.25276.15 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663834958.XANDER-LAPTOP.25276.16 b/logs/test_run/PPO_0/events.out.tfevents.1663834958.XANDER-LAPTOP.25276.16
+deleted file mode 100644
+index af48b7b..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663834958.XANDER-LAPTOP.25276.16 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663835936.XANDER-LAPTOP.25276.17 b/logs/test_run/PPO_0/events.out.tfevents.1663835936.XANDER-LAPTOP.25276.17
+deleted file mode 100644
+index 02a6ee9..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663835936.XANDER-LAPTOP.25276.17 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663836882.XANDER-LAPTOP.25276.18 b/logs/test_run/PPO_0/events.out.tfevents.1663836882.XANDER-LAPTOP.25276.18
+deleted file mode 100644
+index a9dc422..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663836882.XANDER-LAPTOP.25276.18 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663837815.XANDER-LAPTOP.25276.19 b/logs/test_run/PPO_0/events.out.tfevents.1663837815.XANDER-LAPTOP.25276.19
+deleted file mode 100644
+index e3b5ed4..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663837815.XANDER-LAPTOP.25276.19 and /dev/null differ
+diff --git a/logs/test_run/PPO_0/events.out.tfevents.1663933448.XANDER-LAPTOP.22772.0 b/logs/test_run/PPO_0/events.out.tfevents.1663933448.XANDER-LAPTOP.22772.0
+deleted file mode 100644
+index 6e9f0f7..0000000
+Binary files a/logs/test_run/PPO_0/events.out.tfevents.1663933448.XANDER-LAPTOP.22772.0 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663933679.XANDER-LAPTOP.12796.0 b/logs/test_run2/PPO_0/events.out.tfevents.1663933679.XANDER-LAPTOP.12796.0
+deleted file mode 100644
+index 93eb0b1..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663933679.XANDER-LAPTOP.12796.0 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663935016.XANDER-LAPTOP.12796.1 b/logs/test_run2/PPO_0/events.out.tfevents.1663935016.XANDER-LAPTOP.12796.1
+deleted file mode 100644
+index 0ccde64..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663935016.XANDER-LAPTOP.12796.1 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663936361.XANDER-LAPTOP.12796.2 b/logs/test_run2/PPO_0/events.out.tfevents.1663936361.XANDER-LAPTOP.12796.2
+deleted file mode 100644
+index 669129e..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663936361.XANDER-LAPTOP.12796.2 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663937819.XANDER-LAPTOP.12796.3 b/logs/test_run2/PPO_0/events.out.tfevents.1663937819.XANDER-LAPTOP.12796.3
+deleted file mode 100644
+index 57ea132..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663937819.XANDER-LAPTOP.12796.3 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663938953.XANDER-LAPTOP.12796.4 b/logs/test_run2/PPO_0/events.out.tfevents.1663938953.XANDER-LAPTOP.12796.4
+deleted file mode 100644
+index 2ee6728..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663938953.XANDER-LAPTOP.12796.4 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663940084.XANDER-LAPTOP.12796.5 b/logs/test_run2/PPO_0/events.out.tfevents.1663940084.XANDER-LAPTOP.12796.5
+deleted file mode 100644
+index e94cd6f..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663940084.XANDER-LAPTOP.12796.5 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663941172.XANDER-LAPTOP.12796.6 b/logs/test_run2/PPO_0/events.out.tfevents.1663941172.XANDER-LAPTOP.12796.6
+deleted file mode 100644
+index 89ab68a..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663941172.XANDER-LAPTOP.12796.6 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663942227.XANDER-LAPTOP.12796.7 b/logs/test_run2/PPO_0/events.out.tfevents.1663942227.XANDER-LAPTOP.12796.7
+deleted file mode 100644
+index 801f484..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663942227.XANDER-LAPTOP.12796.7 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663943376.XANDER-LAPTOP.12796.8 b/logs/test_run2/PPO_0/events.out.tfevents.1663943376.XANDER-LAPTOP.12796.8
+deleted file mode 100644
+index 519a649..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663943376.XANDER-LAPTOP.12796.8 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663944405.XANDER-LAPTOP.12796.9 b/logs/test_run2/PPO_0/events.out.tfevents.1663944405.XANDER-LAPTOP.12796.9
+deleted file mode 100644
+index c16abb3..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663944405.XANDER-LAPTOP.12796.9 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663945495.XANDER-LAPTOP.12796.10 b/logs/test_run2/PPO_0/events.out.tfevents.1663945495.XANDER-LAPTOP.12796.10
+deleted file mode 100644
+index 8716b93..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663945495.XANDER-LAPTOP.12796.10 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663946655.XANDER-LAPTOP.12796.11 b/logs/test_run2/PPO_0/events.out.tfevents.1663946655.XANDER-LAPTOP.12796.11
+deleted file mode 100644
+index edf785f..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663946655.XANDER-LAPTOP.12796.11 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663947716.XANDER-LAPTOP.12796.12 b/logs/test_run2/PPO_0/events.out.tfevents.1663947716.XANDER-LAPTOP.12796.12
+deleted file mode 100644
+index 982367b..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663947716.XANDER-LAPTOP.12796.12 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663948944.XANDER-LAPTOP.12796.13 b/logs/test_run2/PPO_0/events.out.tfevents.1663948944.XANDER-LAPTOP.12796.13
+deleted file mode 100644
+index 72529ad..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663948944.XANDER-LAPTOP.12796.13 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663950162.XANDER-LAPTOP.12796.14 b/logs/test_run2/PPO_0/events.out.tfevents.1663950162.XANDER-LAPTOP.12796.14
+deleted file mode 100644
+index 6e5b746..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663950162.XANDER-LAPTOP.12796.14 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663951293.XANDER-LAPTOP.12796.15 b/logs/test_run2/PPO_0/events.out.tfevents.1663951293.XANDER-LAPTOP.12796.15
+deleted file mode 100644
+index 2f4702b..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663951293.XANDER-LAPTOP.12796.15 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663952723.XANDER-LAPTOP.12796.16 b/logs/test_run2/PPO_0/events.out.tfevents.1663952723.XANDER-LAPTOP.12796.16
+deleted file mode 100644
+index 4b57d27..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663952723.XANDER-LAPTOP.12796.16 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663954042.XANDER-LAPTOP.12796.17 b/logs/test_run2/PPO_0/events.out.tfevents.1663954042.XANDER-LAPTOP.12796.17
+deleted file mode 100644
+index b6c9271..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663954042.XANDER-LAPTOP.12796.17 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663955398.XANDER-LAPTOP.12796.18 b/logs/test_run2/PPO_0/events.out.tfevents.1663955398.XANDER-LAPTOP.12796.18
+deleted file mode 100644
+index 854e002..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663955398.XANDER-LAPTOP.12796.18 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663956621.XANDER-LAPTOP.12796.19 b/logs/test_run2/PPO_0/events.out.tfevents.1663956621.XANDER-LAPTOP.12796.19
+deleted file mode 100644
+index 18c7f65..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663956621.XANDER-LAPTOP.12796.19 and /dev/null differ
+diff --git a/logs/test_run2/PPO_0/events.out.tfevents.1663958067.XANDER-LAPTOP.11860.0 b/logs/test_run2/PPO_0/events.out.tfevents.1663958067.XANDER-LAPTOP.11860.0
+deleted file mode 100644
+index d777620..0000000
+Binary files a/logs/test_run2/PPO_0/events.out.tfevents.1663958067.XANDER-LAPTOP.11860.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663959021.XANDER-LAPTOP.18112.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663959021.XANDER-LAPTOP.18112.0
+deleted file mode 100644
+index 53850e0..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663959021.XANDER-LAPTOP.18112.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663959132.XANDER-LAPTOP.13944.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663959132.XANDER-LAPTOP.13944.0
+deleted file mode 100644
+index caccfd8..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663959132.XANDER-LAPTOP.13944.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663959240.XANDER-LAPTOP.21376.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663959240.XANDER-LAPTOP.21376.0
+deleted file mode 100644
+index d00cc8f..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663959240.XANDER-LAPTOP.21376.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663961738.XANDER-LAPTOP.16484.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663961738.XANDER-LAPTOP.16484.0
+deleted file mode 100644
+index 4f59db3..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663961738.XANDER-LAPTOP.16484.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663972169.XANDER-LAPTOP.22936.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663972169.XANDER-LAPTOP.22936.0
+deleted file mode 100644
+index 2f63dd2..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663972169.XANDER-LAPTOP.22936.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663973845.XANDER-LAPTOP.10668.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663973845.XANDER-LAPTOP.10668.0
+deleted file mode 100644
+index edfa3b7..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663973845.XANDER-LAPTOP.10668.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663974329.XANDER-LAPTOP.21080.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663974329.XANDER-LAPTOP.21080.0
+deleted file mode 100644
+index d1707c3..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663974329.XANDER-LAPTOP.21080.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663974597.XANDER-LAPTOP.12816.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663974597.XANDER-LAPTOP.12816.0
+deleted file mode 100644
+index 9f696ab..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663974597.XANDER-LAPTOP.12816.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663974997.XANDER-LAPTOP.8624.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663974997.XANDER-LAPTOP.8624.0
+deleted file mode 100644
+index e793451..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663974997.XANDER-LAPTOP.8624.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663975116.XANDER-LAPTOP.16088.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663975116.XANDER-LAPTOP.16088.0
+deleted file mode 100644
+index 13c59b4..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663975116.XANDER-LAPTOP.16088.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663975242.XANDER-LAPTOP.18400.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663975242.XANDER-LAPTOP.18400.0
+deleted file mode 100644
+index a6fb018..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663975242.XANDER-LAPTOP.18400.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663975513.XANDER-LAPTOP.4932.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663975513.XANDER-LAPTOP.4932.0
+deleted file mode 100644
+index 99c9623..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663975513.XANDER-LAPTOP.4932.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663975647.XANDER-LAPTOP.13672.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663975647.XANDER-LAPTOP.13672.0
+deleted file mode 100644
+index 3702e34..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663975647.XANDER-LAPTOP.13672.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1663975935.XANDER-LAPTOP.3232.0 b/logs/test_run3/PPO_0/events.out.tfevents.1663975935.XANDER-LAPTOP.3232.0
+deleted file mode 100644
+index 53b0ba1..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1663975935.XANDER-LAPTOP.3232.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664024151.XANDER-LAPTOP.21988.0 b/logs/test_run3/PPO_0/events.out.tfevents.1664024151.XANDER-LAPTOP.21988.0
+deleted file mode 100644
+index ba7a2a7..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664024151.XANDER-LAPTOP.21988.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664025551.XANDER-LAPTOP.21988.1 b/logs/test_run3/PPO_0/events.out.tfevents.1664025551.XANDER-LAPTOP.21988.1
+deleted file mode 100644
+index ce6afcf..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664025551.XANDER-LAPTOP.21988.1 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664026902.XANDER-LAPTOP.21988.2 b/logs/test_run3/PPO_0/events.out.tfevents.1664026902.XANDER-LAPTOP.21988.2
+deleted file mode 100644
+index 6fe3ee2..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664026902.XANDER-LAPTOP.21988.2 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664028190.XANDER-LAPTOP.21988.3 b/logs/test_run3/PPO_0/events.out.tfevents.1664028190.XANDER-LAPTOP.21988.3
+deleted file mode 100644
+index 6eb25f8..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664028190.XANDER-LAPTOP.21988.3 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664673742.DESKTOP-74BB3EV.3888.0 b/logs/test_run3/PPO_0/events.out.tfevents.1664673742.DESKTOP-74BB3EV.3888.0
+deleted file mode 100644
+index a4a4e08..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664673742.DESKTOP-74BB3EV.3888.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664673854.DESKTOP-74BB3EV.22376.0 b/logs/test_run3/PPO_0/events.out.tfevents.1664673854.DESKTOP-74BB3EV.22376.0
+deleted file mode 100644
+index 878811e..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664673854.DESKTOP-74BB3EV.22376.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664674019.DESKTOP-74BB3EV.23416.0 b/logs/test_run3/PPO_0/events.out.tfevents.1664674019.DESKTOP-74BB3EV.23416.0
+deleted file mode 100644
+index b670a77..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664674019.DESKTOP-74BB3EV.23416.0 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664674914.DESKTOP-74BB3EV.23416.1 b/logs/test_run3/PPO_0/events.out.tfevents.1664674914.DESKTOP-74BB3EV.23416.1
+deleted file mode 100644
+index 4b61311..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664674914.DESKTOP-74BB3EV.23416.1 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664675775.DESKTOP-74BB3EV.23416.2 b/logs/test_run3/PPO_0/events.out.tfevents.1664675775.DESKTOP-74BB3EV.23416.2
+deleted file mode 100644
+index 2408d36..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664675775.DESKTOP-74BB3EV.23416.2 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664676661.DESKTOP-74BB3EV.23416.3 b/logs/test_run3/PPO_0/events.out.tfevents.1664676661.DESKTOP-74BB3EV.23416.3
+deleted file mode 100644
+index 30cf58b..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664676661.DESKTOP-74BB3EV.23416.3 and /dev/null differ
+diff --git a/logs/test_run3/PPO_0/events.out.tfevents.1664677545.DESKTOP-74BB3EV.23416.4 b/logs/test_run3/PPO_0/events.out.tfevents.1664677545.DESKTOP-74BB3EV.23416.4
+deleted file mode 100644
+index 821a530..0000000
+Binary files a/logs/test_run3/PPO_0/events.out.tfevents.1664677545.DESKTOP-74BB3EV.23416.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664678711.DESKTOP-74BB3EV.3524.0 b/logs/test_run4/PPO_0/events.out.tfevents.1664678711.DESKTOP-74BB3EV.3524.0
+deleted file mode 100644
+index 22f009c..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664678711.DESKTOP-74BB3EV.3524.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664679437.DESKTOP-74BB3EV.3524.1 b/logs/test_run4/PPO_0/events.out.tfevents.1664679437.DESKTOP-74BB3EV.3524.1
+deleted file mode 100644
+index 4f7d36e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664679437.DESKTOP-74BB3EV.3524.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664680314.DESKTOP-74BB3EV.3524.2 b/logs/test_run4/PPO_0/events.out.tfevents.1664680314.DESKTOP-74BB3EV.3524.2
+deleted file mode 100644
+index b8f0166..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664680314.DESKTOP-74BB3EV.3524.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664681003.DESKTOP-74BB3EV.3524.3 b/logs/test_run4/PPO_0/events.out.tfevents.1664681003.DESKTOP-74BB3EV.3524.3
+deleted file mode 100644
+index 725d087..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664681003.DESKTOP-74BB3EV.3524.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664681808.DESKTOP-74BB3EV.3524.4 b/logs/test_run4/PPO_0/events.out.tfevents.1664681808.DESKTOP-74BB3EV.3524.4
+deleted file mode 100644
+index 208ea1f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664681808.DESKTOP-74BB3EV.3524.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664682633.DESKTOP-74BB3EV.3524.5 b/logs/test_run4/PPO_0/events.out.tfevents.1664682633.DESKTOP-74BB3EV.3524.5
+deleted file mode 100644
+index a74cccd..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664682633.DESKTOP-74BB3EV.3524.5 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664683278.DESKTOP-74BB3EV.3524.6 b/logs/test_run4/PPO_0/events.out.tfevents.1664683278.DESKTOP-74BB3EV.3524.6
+deleted file mode 100644
+index a304c2b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664683278.DESKTOP-74BB3EV.3524.6 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664735189.XANDER-DESKTOP.3860.0 b/logs/test_run4/PPO_0/events.out.tfevents.1664735189.XANDER-DESKTOP.3860.0
+deleted file mode 100644
+index 04843e5..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664735189.XANDER-DESKTOP.3860.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664735975.XANDER-DESKTOP.3860.1 b/logs/test_run4/PPO_0/events.out.tfevents.1664735975.XANDER-DESKTOP.3860.1
+deleted file mode 100644
+index 47c5102..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664735975.XANDER-DESKTOP.3860.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664736735.XANDER-DESKTOP.3860.2 b/logs/test_run4/PPO_0/events.out.tfevents.1664736735.XANDER-DESKTOP.3860.2
+deleted file mode 100644
+index 40085be..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664736735.XANDER-DESKTOP.3860.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664737565.XANDER-DESKTOP.3860.3 b/logs/test_run4/PPO_0/events.out.tfevents.1664737565.XANDER-DESKTOP.3860.3
+deleted file mode 100644
+index 188347d..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664737565.XANDER-DESKTOP.3860.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664738320.XANDER-DESKTOP.3860.4 b/logs/test_run4/PPO_0/events.out.tfevents.1664738320.XANDER-DESKTOP.3860.4
+deleted file mode 100644
+index 885a6f1..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664738320.XANDER-DESKTOP.3860.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664739166.XANDER-DESKTOP.3860.5 b/logs/test_run4/PPO_0/events.out.tfevents.1664739166.XANDER-DESKTOP.3860.5
+deleted file mode 100644
+index 0e60d42..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664739166.XANDER-DESKTOP.3860.5 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664740005.XANDER-DESKTOP.3860.6 b/logs/test_run4/PPO_0/events.out.tfevents.1664740005.XANDER-DESKTOP.3860.6
+deleted file mode 100644
+index 325b071..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664740005.XANDER-DESKTOP.3860.6 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1664740709.XANDER-DESKTOP.3860.7 b/logs/test_run4/PPO_0/events.out.tfevents.1664740709.XANDER-DESKTOP.3860.7
+deleted file mode 100644
+index afc2b6d..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1664740709.XANDER-DESKTOP.3860.7 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665334679.XANDER-DESKTOP.20184.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665334679.XANDER-DESKTOP.20184.0
+deleted file mode 100644
+index 0225afe..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665334679.XANDER-DESKTOP.20184.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665335796.XANDER-DESKTOP.20184.1 b/logs/test_run4/PPO_0/events.out.tfevents.1665335796.XANDER-DESKTOP.20184.1
+deleted file mode 100644
+index 8bb137c..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665335796.XANDER-DESKTOP.20184.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665336872.XANDER-DESKTOP.20184.2 b/logs/test_run4/PPO_0/events.out.tfevents.1665336872.XANDER-DESKTOP.20184.2
+deleted file mode 100644
+index 803b79f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665336872.XANDER-DESKTOP.20184.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665337997.XANDER-DESKTOP.20184.3 b/logs/test_run4/PPO_0/events.out.tfevents.1665337997.XANDER-DESKTOP.20184.3
+deleted file mode 100644
+index 18b595a..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665337997.XANDER-DESKTOP.20184.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665338923.XANDER-DESKTOP.20184.4 b/logs/test_run4/PPO_0/events.out.tfevents.1665338923.XANDER-DESKTOP.20184.4
+deleted file mode 100644
+index 06e486f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665338923.XANDER-DESKTOP.20184.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665355900.XANDER-DESKTOP.4904.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665355900.XANDER-DESKTOP.4904.0
+deleted file mode 100644
+index d4641cb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665355900.XANDER-DESKTOP.4904.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665356883.XANDER-DESKTOP.4904.1 b/logs/test_run4/PPO_0/events.out.tfevents.1665356883.XANDER-DESKTOP.4904.1
+deleted file mode 100644
+index fc01f6f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665356883.XANDER-DESKTOP.4904.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665357787.XANDER-DESKTOP.4904.2 b/logs/test_run4/PPO_0/events.out.tfevents.1665357787.XANDER-DESKTOP.4904.2
+deleted file mode 100644
+index 6ce2e9c..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665357787.XANDER-DESKTOP.4904.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665358777.XANDER-DESKTOP.4904.3 b/logs/test_run4/PPO_0/events.out.tfevents.1665358777.XANDER-DESKTOP.4904.3
+deleted file mode 100644
+index 84387cb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665358777.XANDER-DESKTOP.4904.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665359711.XANDER-DESKTOP.4904.4 b/logs/test_run4/PPO_0/events.out.tfevents.1665359711.XANDER-DESKTOP.4904.4
+deleted file mode 100644
+index e679e21..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665359711.XANDER-DESKTOP.4904.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665360725.XANDER-DESKTOP.4904.5 b/logs/test_run4/PPO_0/events.out.tfevents.1665360725.XANDER-DESKTOP.4904.5
+deleted file mode 100644
+index 423619e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665360725.XANDER-DESKTOP.4904.5 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665361694.XANDER-DESKTOP.4904.6 b/logs/test_run4/PPO_0/events.out.tfevents.1665361694.XANDER-DESKTOP.4904.6
+deleted file mode 100644
+index d022a57..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665361694.XANDER-DESKTOP.4904.6 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665362567.XANDER-DESKTOP.4904.7 b/logs/test_run4/PPO_0/events.out.tfevents.1665362567.XANDER-DESKTOP.4904.7
+deleted file mode 100644
+index d743e0d..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665362567.XANDER-DESKTOP.4904.7 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665363422.XANDER-DESKTOP.4904.8 b/logs/test_run4/PPO_0/events.out.tfevents.1665363422.XANDER-DESKTOP.4904.8
+deleted file mode 100644
+index 5debd81..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665363422.XANDER-DESKTOP.4904.8 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665364251.XANDER-DESKTOP.4904.9 b/logs/test_run4/PPO_0/events.out.tfevents.1665364251.XANDER-DESKTOP.4904.9
+deleted file mode 100644
+index c63a4b1..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665364251.XANDER-DESKTOP.4904.9 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665365132.XANDER-DESKTOP.4904.10 b/logs/test_run4/PPO_0/events.out.tfevents.1665365132.XANDER-DESKTOP.4904.10
+deleted file mode 100644
+index c599732..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665365132.XANDER-DESKTOP.4904.10 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665366015.XANDER-DESKTOP.4904.11 b/logs/test_run4/PPO_0/events.out.tfevents.1665366015.XANDER-DESKTOP.4904.11
+deleted file mode 100644
+index a8dc769..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665366015.XANDER-DESKTOP.4904.11 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665366942.XANDER-DESKTOP.4904.12 b/logs/test_run4/PPO_0/events.out.tfevents.1665366942.XANDER-DESKTOP.4904.12
+deleted file mode 100644
+index 96901f2..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665366942.XANDER-DESKTOP.4904.12 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665367709.XANDER-DESKTOP.4904.13 b/logs/test_run4/PPO_0/events.out.tfevents.1665367709.XANDER-DESKTOP.4904.13
+deleted file mode 100644
+index c30e5d9..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665367709.XANDER-DESKTOP.4904.13 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665368591.XANDER-DESKTOP.4904.14 b/logs/test_run4/PPO_0/events.out.tfevents.1665368591.XANDER-DESKTOP.4904.14
+deleted file mode 100644
+index 2ff851e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665368591.XANDER-DESKTOP.4904.14 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665401865.XANDER-DESKTOP.11124.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665401865.XANDER-DESKTOP.11124.0
+deleted file mode 100644
+index ecc9e42..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665401865.XANDER-DESKTOP.11124.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665402878.XANDER-DESKTOP.11124.1 b/logs/test_run4/PPO_0/events.out.tfevents.1665402878.XANDER-DESKTOP.11124.1
+deleted file mode 100644
+index 4b3b2f7..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665402878.XANDER-DESKTOP.11124.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665403904.XANDER-DESKTOP.11124.2 b/logs/test_run4/PPO_0/events.out.tfevents.1665403904.XANDER-DESKTOP.11124.2
+deleted file mode 100644
+index 6f9b3be..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665403904.XANDER-DESKTOP.11124.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665404726.XANDER-DESKTOP.11124.3 b/logs/test_run4/PPO_0/events.out.tfevents.1665404726.XANDER-DESKTOP.11124.3
+deleted file mode 100644
+index 4bfe525..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665404726.XANDER-DESKTOP.11124.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665405731.XANDER-DESKTOP.11124.4 b/logs/test_run4/PPO_0/events.out.tfevents.1665405731.XANDER-DESKTOP.11124.4
+deleted file mode 100644
+index f9b7f7c..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665405731.XANDER-DESKTOP.11124.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665406534.XANDER-DESKTOP.11124.5 b/logs/test_run4/PPO_0/events.out.tfevents.1665406534.XANDER-DESKTOP.11124.5
+deleted file mode 100644
+index fa49625..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665406534.XANDER-DESKTOP.11124.5 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665407498.XANDER-DESKTOP.11124.6 b/logs/test_run4/PPO_0/events.out.tfevents.1665407498.XANDER-DESKTOP.11124.6
+deleted file mode 100644
+index cf9a39e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665407498.XANDER-DESKTOP.11124.6 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665408305.XANDER-DESKTOP.11124.7 b/logs/test_run4/PPO_0/events.out.tfevents.1665408305.XANDER-DESKTOP.11124.7
+deleted file mode 100644
+index 1e8488b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665408305.XANDER-DESKTOP.11124.7 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665409228.XANDER-DESKTOP.11124.8 b/logs/test_run4/PPO_0/events.out.tfevents.1665409228.XANDER-DESKTOP.11124.8
+deleted file mode 100644
+index 6e5063a..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665409228.XANDER-DESKTOP.11124.8 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665410058.XANDER-DESKTOP.11124.9 b/logs/test_run4/PPO_0/events.out.tfevents.1665410058.XANDER-DESKTOP.11124.9
+deleted file mode 100644
+index 20343aa..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665410058.XANDER-DESKTOP.11124.9 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665410946.XANDER-DESKTOP.11124.10 b/logs/test_run4/PPO_0/events.out.tfevents.1665410946.XANDER-DESKTOP.11124.10
+deleted file mode 100644
+index b8792f0..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665410946.XANDER-DESKTOP.11124.10 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665411990.XANDER-DESKTOP.11124.11 b/logs/test_run4/PPO_0/events.out.tfevents.1665411990.XANDER-DESKTOP.11124.11
+deleted file mode 100644
+index f40dd77..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665411990.XANDER-DESKTOP.11124.11 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665412788.XANDER-DESKTOP.11124.12 b/logs/test_run4/PPO_0/events.out.tfevents.1665412788.XANDER-DESKTOP.11124.12
+deleted file mode 100644
+index 201b040..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665412788.XANDER-DESKTOP.11124.12 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665413703.XANDER-DESKTOP.11124.13 b/logs/test_run4/PPO_0/events.out.tfevents.1665413703.XANDER-DESKTOP.11124.13
+deleted file mode 100644
+index 5383166..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665413703.XANDER-DESKTOP.11124.13 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665414531.XANDER-DESKTOP.11124.14 b/logs/test_run4/PPO_0/events.out.tfevents.1665414531.XANDER-DESKTOP.11124.14
+deleted file mode 100644
+index 26922b7..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665414531.XANDER-DESKTOP.11124.14 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665415455.XANDER-DESKTOP.11124.15 b/logs/test_run4/PPO_0/events.out.tfevents.1665415455.XANDER-DESKTOP.11124.15
+deleted file mode 100644
+index 8ae4f9f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665415455.XANDER-DESKTOP.11124.15 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665416309.XANDER-DESKTOP.11124.16 b/logs/test_run4/PPO_0/events.out.tfevents.1665416309.XANDER-DESKTOP.11124.16
+deleted file mode 100644
+index a9d52ce..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665416309.XANDER-DESKTOP.11124.16 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665417216.XANDER-DESKTOP.11124.17 b/logs/test_run4/PPO_0/events.out.tfevents.1665417216.XANDER-DESKTOP.11124.17
+deleted file mode 100644
+index 73152b3..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665417216.XANDER-DESKTOP.11124.17 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665418095.XANDER-DESKTOP.11124.18 b/logs/test_run4/PPO_0/events.out.tfevents.1665418095.XANDER-DESKTOP.11124.18
+deleted file mode 100644
+index 8d2d7c9..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665418095.XANDER-DESKTOP.11124.18 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665418814.XANDER-DESKTOP.11124.19 b/logs/test_run4/PPO_0/events.out.tfevents.1665418814.XANDER-DESKTOP.11124.19
+deleted file mode 100644
+index 8980e35..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665418814.XANDER-DESKTOP.11124.19 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665419765.XANDER-DESKTOP.11124.20 b/logs/test_run4/PPO_0/events.out.tfevents.1665419765.XANDER-DESKTOP.11124.20
+deleted file mode 100644
+index 363a836..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665419765.XANDER-DESKTOP.11124.20 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665420649.XANDER-DESKTOP.11124.21 b/logs/test_run4/PPO_0/events.out.tfevents.1665420649.XANDER-DESKTOP.11124.21
+deleted file mode 100644
+index de74b37..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665420649.XANDER-DESKTOP.11124.21 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665421453.XANDER-DESKTOP.11124.22 b/logs/test_run4/PPO_0/events.out.tfevents.1665421453.XANDER-DESKTOP.11124.22
+deleted file mode 100644
+index 8927d4d..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665421453.XANDER-DESKTOP.11124.22 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665422359.XANDER-DESKTOP.11124.23 b/logs/test_run4/PPO_0/events.out.tfevents.1665422359.XANDER-DESKTOP.11124.23
+deleted file mode 100644
+index b8f772b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665422359.XANDER-DESKTOP.11124.23 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665423155.XANDER-DESKTOP.11124.24 b/logs/test_run4/PPO_0/events.out.tfevents.1665423155.XANDER-DESKTOP.11124.24
+deleted file mode 100644
+index ddb7efb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665423155.XANDER-DESKTOP.11124.24 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665423983.XANDER-DESKTOP.11124.25 b/logs/test_run4/PPO_0/events.out.tfevents.1665423983.XANDER-DESKTOP.11124.25
+deleted file mode 100644
+index 7ae8e26..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665423983.XANDER-DESKTOP.11124.25 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665424766.XANDER-DESKTOP.11124.26 b/logs/test_run4/PPO_0/events.out.tfevents.1665424766.XANDER-DESKTOP.11124.26
+deleted file mode 100644
+index fa75bae..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665424766.XANDER-DESKTOP.11124.26 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665425588.XANDER-DESKTOP.11124.27 b/logs/test_run4/PPO_0/events.out.tfevents.1665425588.XANDER-DESKTOP.11124.27
+deleted file mode 100644
+index 4665bf5..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665425588.XANDER-DESKTOP.11124.27 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665426433.XANDER-DESKTOP.11124.28 b/logs/test_run4/PPO_0/events.out.tfevents.1665426433.XANDER-DESKTOP.11124.28
+deleted file mode 100644
+index 84a181b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665426433.XANDER-DESKTOP.11124.28 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665427354.XANDER-DESKTOP.11124.29 b/logs/test_run4/PPO_0/events.out.tfevents.1665427354.XANDER-DESKTOP.11124.29
+deleted file mode 100644
+index 2c513b1..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665427354.XANDER-DESKTOP.11124.29 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665428156.XANDER-DESKTOP.11124.30 b/logs/test_run4/PPO_0/events.out.tfevents.1665428156.XANDER-DESKTOP.11124.30
+deleted file mode 100644
+index c392bd6..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665428156.XANDER-DESKTOP.11124.30 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665429041.XANDER-DESKTOP.11124.31 b/logs/test_run4/PPO_0/events.out.tfevents.1665429041.XANDER-DESKTOP.11124.31
+deleted file mode 100644
+index eaedeec..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665429041.XANDER-DESKTOP.11124.31 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665429945.XANDER-DESKTOP.11124.32 b/logs/test_run4/PPO_0/events.out.tfevents.1665429945.XANDER-DESKTOP.11124.32
+deleted file mode 100644
+index 6346873..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665429945.XANDER-DESKTOP.11124.32 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665430728.XANDER-DESKTOP.11124.33 b/logs/test_run4/PPO_0/events.out.tfevents.1665430728.XANDER-DESKTOP.11124.33
+deleted file mode 100644
+index a51b308..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665430728.XANDER-DESKTOP.11124.33 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665431527.XANDER-DESKTOP.11124.34 b/logs/test_run4/PPO_0/events.out.tfevents.1665431527.XANDER-DESKTOP.11124.34
+deleted file mode 100644
+index 8cfc62b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665431527.XANDER-DESKTOP.11124.34 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665432309.XANDER-DESKTOP.11124.35 b/logs/test_run4/PPO_0/events.out.tfevents.1665432309.XANDER-DESKTOP.11124.35
+deleted file mode 100644
+index d6eafb2..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665432309.XANDER-DESKTOP.11124.35 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665433091.XANDER-DESKTOP.11124.36 b/logs/test_run4/PPO_0/events.out.tfevents.1665433091.XANDER-DESKTOP.11124.36
+deleted file mode 100644
+index 1295a8a..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665433091.XANDER-DESKTOP.11124.36 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665433920.XANDER-DESKTOP.11124.37 b/logs/test_run4/PPO_0/events.out.tfevents.1665433920.XANDER-DESKTOP.11124.37
+deleted file mode 100644
+index b24d7b9..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665433920.XANDER-DESKTOP.11124.37 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665434707.XANDER-DESKTOP.11124.38 b/logs/test_run4/PPO_0/events.out.tfevents.1665434707.XANDER-DESKTOP.11124.38
+deleted file mode 100644
+index fdf229e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665434707.XANDER-DESKTOP.11124.38 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665435487.XANDER-DESKTOP.11124.39 b/logs/test_run4/PPO_0/events.out.tfevents.1665435487.XANDER-DESKTOP.11124.39
+deleted file mode 100644
+index 7dc5356..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665435487.XANDER-DESKTOP.11124.39 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665436309.XANDER-DESKTOP.11124.40 b/logs/test_run4/PPO_0/events.out.tfevents.1665436309.XANDER-DESKTOP.11124.40
+deleted file mode 100644
+index 3d64e7b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665436309.XANDER-DESKTOP.11124.40 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665437168.XANDER-DESKTOP.11124.41 b/logs/test_run4/PPO_0/events.out.tfevents.1665437168.XANDER-DESKTOP.11124.41
+deleted file mode 100644
+index d2c8d21..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665437168.XANDER-DESKTOP.11124.41 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665437997.XANDER-DESKTOP.11124.42 b/logs/test_run4/PPO_0/events.out.tfevents.1665437997.XANDER-DESKTOP.11124.42
+deleted file mode 100644
+index ef0e57e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665437997.XANDER-DESKTOP.11124.42 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665438870.XANDER-DESKTOP.11124.43 b/logs/test_run4/PPO_0/events.out.tfevents.1665438870.XANDER-DESKTOP.11124.43
+deleted file mode 100644
+index 4c6f9a1..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665438870.XANDER-DESKTOP.11124.43 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665439601.XANDER-DESKTOP.11124.44 b/logs/test_run4/PPO_0/events.out.tfevents.1665439601.XANDER-DESKTOP.11124.44
+deleted file mode 100644
+index 2a225be..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665439601.XANDER-DESKTOP.11124.44 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665440336.XANDER-DESKTOP.11124.45 b/logs/test_run4/PPO_0/events.out.tfevents.1665440336.XANDER-DESKTOP.11124.45
+deleted file mode 100644
+index 7de0eb8..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665440336.XANDER-DESKTOP.11124.45 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665441124.XANDER-DESKTOP.11124.46 b/logs/test_run4/PPO_0/events.out.tfevents.1665441124.XANDER-DESKTOP.11124.46
+deleted file mode 100644
+index 5957d3e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665441124.XANDER-DESKTOP.11124.46 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665441924.XANDER-DESKTOP.11124.47 b/logs/test_run4/PPO_0/events.out.tfevents.1665441924.XANDER-DESKTOP.11124.47
+deleted file mode 100644
+index 7c03836..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665441924.XANDER-DESKTOP.11124.47 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665442781.XANDER-DESKTOP.11124.48 b/logs/test_run4/PPO_0/events.out.tfevents.1665442781.XANDER-DESKTOP.11124.48
+deleted file mode 100644
+index 81ee48f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665442781.XANDER-DESKTOP.11124.48 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665443555.XANDER-DESKTOP.11124.49 b/logs/test_run4/PPO_0/events.out.tfevents.1665443555.XANDER-DESKTOP.11124.49
+deleted file mode 100644
+index e09d8a1..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665443555.XANDER-DESKTOP.11124.49 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665444351.XANDER-DESKTOP.11124.50 b/logs/test_run4/PPO_0/events.out.tfevents.1665444351.XANDER-DESKTOP.11124.50
+deleted file mode 100644
+index 61566e6..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665444351.XANDER-DESKTOP.11124.50 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665445111.XANDER-DESKTOP.11124.51 b/logs/test_run4/PPO_0/events.out.tfevents.1665445111.XANDER-DESKTOP.11124.51
+deleted file mode 100644
+index 7ba1f12..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665445111.XANDER-DESKTOP.11124.51 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665445846.XANDER-DESKTOP.11124.52 b/logs/test_run4/PPO_0/events.out.tfevents.1665445846.XANDER-DESKTOP.11124.52
+deleted file mode 100644
+index 0e42992..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665445846.XANDER-DESKTOP.11124.52 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665446644.XANDER-DESKTOP.11124.53 b/logs/test_run4/PPO_0/events.out.tfevents.1665446644.XANDER-DESKTOP.11124.53
+deleted file mode 100644
+index a0a41e2..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665446644.XANDER-DESKTOP.11124.53 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665447384.XANDER-DESKTOP.11124.54 b/logs/test_run4/PPO_0/events.out.tfevents.1665447384.XANDER-DESKTOP.11124.54
+deleted file mode 100644
+index 2c549bb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665447384.XANDER-DESKTOP.11124.54 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665448137.XANDER-DESKTOP.11124.55 b/logs/test_run4/PPO_0/events.out.tfevents.1665448137.XANDER-DESKTOP.11124.55
+deleted file mode 100644
+index b48f1f2..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665448137.XANDER-DESKTOP.11124.55 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665448975.XANDER-DESKTOP.11124.56 b/logs/test_run4/PPO_0/events.out.tfevents.1665448975.XANDER-DESKTOP.11124.56
+deleted file mode 100644
+index 9c560e4..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665448975.XANDER-DESKTOP.11124.56 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665449732.XANDER-DESKTOP.11124.57 b/logs/test_run4/PPO_0/events.out.tfevents.1665449732.XANDER-DESKTOP.11124.57
+deleted file mode 100644
+index 9be579b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665449732.XANDER-DESKTOP.11124.57 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665450682.XANDER-DESKTOP.11124.58 b/logs/test_run4/PPO_0/events.out.tfevents.1665450682.XANDER-DESKTOP.11124.58
+deleted file mode 100644
+index cd4640a..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665450682.XANDER-DESKTOP.11124.58 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665451381.XANDER-DESKTOP.11124.59 b/logs/test_run4/PPO_0/events.out.tfevents.1665451381.XANDER-DESKTOP.11124.59
+deleted file mode 100644
+index 7b47037..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665451381.XANDER-DESKTOP.11124.59 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665452109.XANDER-DESKTOP.11124.60 b/logs/test_run4/PPO_0/events.out.tfevents.1665452109.XANDER-DESKTOP.11124.60
+deleted file mode 100644
+index 0012685..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665452109.XANDER-DESKTOP.11124.60 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665452935.XANDER-DESKTOP.11124.61 b/logs/test_run4/PPO_0/events.out.tfevents.1665452935.XANDER-DESKTOP.11124.61
+deleted file mode 100644
+index 9deb318..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665452935.XANDER-DESKTOP.11124.61 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665453849.XANDER-DESKTOP.11124.62 b/logs/test_run4/PPO_0/events.out.tfevents.1665453849.XANDER-DESKTOP.11124.62
+deleted file mode 100644
+index 39059c0..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665453849.XANDER-DESKTOP.11124.62 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665493739.XANDER-DESKTOP.15788.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665493739.XANDER-DESKTOP.15788.0
+deleted file mode 100644
+index 0a535cd..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665493739.XANDER-DESKTOP.15788.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665494821.XANDER-DESKTOP.15788.1 b/logs/test_run4/PPO_0/events.out.tfevents.1665494821.XANDER-DESKTOP.15788.1
+deleted file mode 100644
+index 34a7bf8..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665494821.XANDER-DESKTOP.15788.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665495818.XANDER-DESKTOP.15788.2 b/logs/test_run4/PPO_0/events.out.tfevents.1665495818.XANDER-DESKTOP.15788.2
+deleted file mode 100644
+index ebe4438..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665495818.XANDER-DESKTOP.15788.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665496740.XANDER-DESKTOP.15788.3 b/logs/test_run4/PPO_0/events.out.tfevents.1665496740.XANDER-DESKTOP.15788.3
+deleted file mode 100644
+index cf2d16f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665496740.XANDER-DESKTOP.15788.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665497740.XANDER-DESKTOP.15788.4 b/logs/test_run4/PPO_0/events.out.tfevents.1665497740.XANDER-DESKTOP.15788.4
+deleted file mode 100644
+index 0741554..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665497740.XANDER-DESKTOP.15788.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665498672.XANDER-DESKTOP.15788.5 b/logs/test_run4/PPO_0/events.out.tfevents.1665498672.XANDER-DESKTOP.15788.5
+deleted file mode 100644
+index c8394d4..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665498672.XANDER-DESKTOP.15788.5 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665499633.XANDER-DESKTOP.15788.6 b/logs/test_run4/PPO_0/events.out.tfevents.1665499633.XANDER-DESKTOP.15788.6
+deleted file mode 100644
+index ca592a3..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665499633.XANDER-DESKTOP.15788.6 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665500427.XANDER-DESKTOP.15788.7 b/logs/test_run4/PPO_0/events.out.tfevents.1665500427.XANDER-DESKTOP.15788.7
+deleted file mode 100644
+index 5aedd15..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665500427.XANDER-DESKTOP.15788.7 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665501495.XANDER-DESKTOP.15788.8 b/logs/test_run4/PPO_0/events.out.tfevents.1665501495.XANDER-DESKTOP.15788.8
+deleted file mode 100644
+index 05a3c1f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665501495.XANDER-DESKTOP.15788.8 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665502425.XANDER-DESKTOP.15788.9 b/logs/test_run4/PPO_0/events.out.tfevents.1665502425.XANDER-DESKTOP.15788.9
+deleted file mode 100644
+index 9486f9a..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665502425.XANDER-DESKTOP.15788.9 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665503225.XANDER-DESKTOP.15788.10 b/logs/test_run4/PPO_0/events.out.tfevents.1665503225.XANDER-DESKTOP.15788.10
+deleted file mode 100644
+index d0cf99f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665503225.XANDER-DESKTOP.15788.10 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665504172.XANDER-DESKTOP.15788.11 b/logs/test_run4/PPO_0/events.out.tfevents.1665504172.XANDER-DESKTOP.15788.11
+deleted file mode 100644
+index 16cf0a4..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665504172.XANDER-DESKTOP.15788.11 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665504999.XANDER-DESKTOP.15788.12 b/logs/test_run4/PPO_0/events.out.tfevents.1665504999.XANDER-DESKTOP.15788.12
+deleted file mode 100644
+index 324ccfb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665504999.XANDER-DESKTOP.15788.12 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665505820.XANDER-DESKTOP.15788.13 b/logs/test_run4/PPO_0/events.out.tfevents.1665505820.XANDER-DESKTOP.15788.13
+deleted file mode 100644
+index a74099e..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665505820.XANDER-DESKTOP.15788.13 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665506878.XANDER-DESKTOP.15788.14 b/logs/test_run4/PPO_0/events.out.tfevents.1665506878.XANDER-DESKTOP.15788.14
+deleted file mode 100644
+index 2209b66..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665506878.XANDER-DESKTOP.15788.14 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665507706.XANDER-DESKTOP.15788.15 b/logs/test_run4/PPO_0/events.out.tfevents.1665507706.XANDER-DESKTOP.15788.15
+deleted file mode 100644
+index 2d510f5..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665507706.XANDER-DESKTOP.15788.15 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665508485.XANDER-DESKTOP.15788.16 b/logs/test_run4/PPO_0/events.out.tfevents.1665508485.XANDER-DESKTOP.15788.16
+deleted file mode 100644
+index e3ee649..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665508485.XANDER-DESKTOP.15788.16 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665509198.XANDER-DESKTOP.15788.17 b/logs/test_run4/PPO_0/events.out.tfevents.1665509198.XANDER-DESKTOP.15788.17
+deleted file mode 100644
+index 0779cee..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665509198.XANDER-DESKTOP.15788.17 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665509905.XANDER-DESKTOP.15788.18 b/logs/test_run4/PPO_0/events.out.tfevents.1665509905.XANDER-DESKTOP.15788.18
+deleted file mode 100644
+index 30baf1b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665509905.XANDER-DESKTOP.15788.18 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665510630.XANDER-DESKTOP.15788.19 b/logs/test_run4/PPO_0/events.out.tfevents.1665510630.XANDER-DESKTOP.15788.19
+deleted file mode 100644
+index 863847f..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665510630.XANDER-DESKTOP.15788.19 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665511329.XANDER-DESKTOP.15788.20 b/logs/test_run4/PPO_0/events.out.tfevents.1665511329.XANDER-DESKTOP.15788.20
+deleted file mode 100644
+index 7e06151..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665511329.XANDER-DESKTOP.15788.20 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665752060.XANDER-LAPTOP.14092.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665752060.XANDER-LAPTOP.14092.0
+deleted file mode 100644
+index 86b3696..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665752060.XANDER-LAPTOP.14092.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665788406.XANDER-LAPTOP.4604.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665788406.XANDER-LAPTOP.4604.0
+deleted file mode 100644
+index 9376085..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665788406.XANDER-LAPTOP.4604.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665789386.XANDER-LAPTOP.6716.0 b/logs/test_run4/PPO_0/events.out.tfevents.1665789386.XANDER-LAPTOP.6716.0
+deleted file mode 100644
+index 69a31d0..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665789386.XANDER-LAPTOP.6716.0 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665790586.XANDER-LAPTOP.6716.1 b/logs/test_run4/PPO_0/events.out.tfevents.1665790586.XANDER-LAPTOP.6716.1
+deleted file mode 100644
+index 49e9c10..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665790586.XANDER-LAPTOP.6716.1 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665791729.XANDER-LAPTOP.6716.2 b/logs/test_run4/PPO_0/events.out.tfevents.1665791729.XANDER-LAPTOP.6716.2
+deleted file mode 100644
+index 875b4cb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665791729.XANDER-LAPTOP.6716.2 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665792780.XANDER-LAPTOP.6716.3 b/logs/test_run4/PPO_0/events.out.tfevents.1665792780.XANDER-LAPTOP.6716.3
+deleted file mode 100644
+index 23f97cb..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665792780.XANDER-LAPTOP.6716.3 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665794047.XANDER-LAPTOP.6716.4 b/logs/test_run4/PPO_0/events.out.tfevents.1665794047.XANDER-LAPTOP.6716.4
+deleted file mode 100644
+index f244064..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665794047.XANDER-LAPTOP.6716.4 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665795159.XANDER-LAPTOP.6716.5 b/logs/test_run4/PPO_0/events.out.tfevents.1665795159.XANDER-LAPTOP.6716.5
+deleted file mode 100644
+index ca2735b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665795159.XANDER-LAPTOP.6716.5 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665796449.XANDER-LAPTOP.6716.6 b/logs/test_run4/PPO_0/events.out.tfevents.1665796449.XANDER-LAPTOP.6716.6
+deleted file mode 100644
+index c09887a..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665796449.XANDER-LAPTOP.6716.6 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665797579.XANDER-LAPTOP.6716.7 b/logs/test_run4/PPO_0/events.out.tfevents.1665797579.XANDER-LAPTOP.6716.7
+deleted file mode 100644
+index b2b4e6b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665797579.XANDER-LAPTOP.6716.7 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665798612.XANDER-LAPTOP.6716.8 b/logs/test_run4/PPO_0/events.out.tfevents.1665798612.XANDER-LAPTOP.6716.8
+deleted file mode 100644
+index 601a932..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665798612.XANDER-LAPTOP.6716.8 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665799777.XANDER-LAPTOP.6716.9 b/logs/test_run4/PPO_0/events.out.tfevents.1665799777.XANDER-LAPTOP.6716.9
+deleted file mode 100644
+index 817d228..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665799777.XANDER-LAPTOP.6716.9 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665800854.XANDER-LAPTOP.6716.10 b/logs/test_run4/PPO_0/events.out.tfevents.1665800854.XANDER-LAPTOP.6716.10
+deleted file mode 100644
+index 3b1ce0d..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665800854.XANDER-LAPTOP.6716.10 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665801935.XANDER-LAPTOP.6716.11 b/logs/test_run4/PPO_0/events.out.tfevents.1665801935.XANDER-LAPTOP.6716.11
+deleted file mode 100644
+index 5a08419..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665801935.XANDER-LAPTOP.6716.11 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665802978.XANDER-LAPTOP.6716.12 b/logs/test_run4/PPO_0/events.out.tfevents.1665802978.XANDER-LAPTOP.6716.12
+deleted file mode 100644
+index a119b75..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665802978.XANDER-LAPTOP.6716.12 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665804002.XANDER-LAPTOP.6716.13 b/logs/test_run4/PPO_0/events.out.tfevents.1665804002.XANDER-LAPTOP.6716.13
+deleted file mode 100644
+index 6e3843c..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665804002.XANDER-LAPTOP.6716.13 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665805194.XANDER-LAPTOP.6716.14 b/logs/test_run4/PPO_0/events.out.tfevents.1665805194.XANDER-LAPTOP.6716.14
+deleted file mode 100644
+index 1501050..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665805194.XANDER-LAPTOP.6716.14 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665806357.XANDER-LAPTOP.6716.15 b/logs/test_run4/PPO_0/events.out.tfevents.1665806357.XANDER-LAPTOP.6716.15
+deleted file mode 100644
+index a6b87ed..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665806357.XANDER-LAPTOP.6716.15 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665807419.XANDER-LAPTOP.6716.16 b/logs/test_run4/PPO_0/events.out.tfevents.1665807419.XANDER-LAPTOP.6716.16
+deleted file mode 100644
+index e04bf47..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665807419.XANDER-LAPTOP.6716.16 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665808691.XANDER-LAPTOP.6716.17 b/logs/test_run4/PPO_0/events.out.tfevents.1665808691.XANDER-LAPTOP.6716.17
+deleted file mode 100644
+index 3aa1939..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665808691.XANDER-LAPTOP.6716.17 and /dev/null differ
+diff --git a/logs/test_run4/PPO_0/events.out.tfevents.1665809671.XANDER-LAPTOP.6716.18 b/logs/test_run4/PPO_0/events.out.tfevents.1665809671.XANDER-LAPTOP.6716.18
+deleted file mode 100644
+index ec8827b..0000000
+Binary files a/logs/test_run4/PPO_0/events.out.tfevents.1665809671.XANDER-LAPTOP.6716.18 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665810504.XANDER-DESKTOP.2728.0 b/logs/test_run5/PPO_0/events.out.tfevents.1665810504.XANDER-DESKTOP.2728.0
+deleted file mode 100644
+index 7daebd5..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665810504.XANDER-DESKTOP.2728.0 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665810797.XANDER-DESKTOP.7620.0 b/logs/test_run5/PPO_0/events.out.tfevents.1665810797.XANDER-DESKTOP.7620.0
+deleted file mode 100644
+index 1dfe427..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665810797.XANDER-DESKTOP.7620.0 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665817708.XANDER-DESKTOP.7620.1 b/logs/test_run5/PPO_0/events.out.tfevents.1665817708.XANDER-DESKTOP.7620.1
+deleted file mode 100644
+index c491d40..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665817708.XANDER-DESKTOP.7620.1 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665823649.XANDER-DESKTOP.7620.2 b/logs/test_run5/PPO_0/events.out.tfevents.1665823649.XANDER-DESKTOP.7620.2
+deleted file mode 100644
+index a6a09bc..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665823649.XANDER-DESKTOP.7620.2 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665829478.XANDER-DESKTOP.7620.3 b/logs/test_run5/PPO_0/events.out.tfevents.1665829478.XANDER-DESKTOP.7620.3
+deleted file mode 100644
+index 6ee27ab..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665829478.XANDER-DESKTOP.7620.3 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665838826.XANDER-DESKTOP.10660.0 b/logs/test_run5/PPO_0/events.out.tfevents.1665838826.XANDER-DESKTOP.10660.0
+deleted file mode 100644
+index 4e9873b..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665838826.XANDER-DESKTOP.10660.0 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665855547.XANDER-DESKTOP.24856.0 b/logs/test_run5/PPO_0/events.out.tfevents.1665855547.XANDER-DESKTOP.24856.0
+deleted file mode 100644
+index 9971dbe..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665855547.XANDER-DESKTOP.24856.0 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665861682.XANDER-DESKTOP.24856.1 b/logs/test_run5/PPO_0/events.out.tfevents.1665861682.XANDER-DESKTOP.24856.1
+deleted file mode 100644
+index e7e2fa4..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665861682.XANDER-DESKTOP.24856.1 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665869880.XANDER-DESKTOP.24856.2 b/logs/test_run5/PPO_0/events.out.tfevents.1665869880.XANDER-DESKTOP.24856.2
+deleted file mode 100644
+index 63b2775..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665869880.XANDER-DESKTOP.24856.2 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665873434.XANDER-DESKTOP.12668.0 b/logs/test_run5/PPO_0/events.out.tfevents.1665873434.XANDER-DESKTOP.12668.0
+deleted file mode 100644
+index c462005..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665873434.XANDER-DESKTOP.12668.0 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665879346.XANDER-DESKTOP.16572.0 b/logs/test_run5/PPO_0/events.out.tfevents.1665879346.XANDER-DESKTOP.16572.0
+deleted file mode 100644
+index e621a08..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665879346.XANDER-DESKTOP.16572.0 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665889285.XANDER-DESKTOP.16572.1 b/logs/test_run5/PPO_0/events.out.tfevents.1665889285.XANDER-DESKTOP.16572.1
+deleted file mode 100644
+index aa224fc..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665889285.XANDER-DESKTOP.16572.1 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665896689.XANDER-DESKTOP.16572.2 b/logs/test_run5/PPO_0/events.out.tfevents.1665896689.XANDER-DESKTOP.16572.2
+deleted file mode 100644
+index 538c592..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665896689.XANDER-DESKTOP.16572.2 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665903954.XANDER-DESKTOP.16572.3 b/logs/test_run5/PPO_0/events.out.tfevents.1665903954.XANDER-DESKTOP.16572.3
+deleted file mode 100644
+index f819b8a..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665903954.XANDER-DESKTOP.16572.3 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665911171.XANDER-DESKTOP.16572.4 b/logs/test_run5/PPO_0/events.out.tfevents.1665911171.XANDER-DESKTOP.16572.4
+deleted file mode 100644
+index f8dfe75..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665911171.XANDER-DESKTOP.16572.4 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665918397.XANDER-DESKTOP.16572.5 b/logs/test_run5/PPO_0/events.out.tfevents.1665918397.XANDER-DESKTOP.16572.5
+deleted file mode 100644
+index a94b86a..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665918397.XANDER-DESKTOP.16572.5 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665925825.XANDER-DESKTOP.16572.6 b/logs/test_run5/PPO_0/events.out.tfevents.1665925825.XANDER-DESKTOP.16572.6
+deleted file mode 100644
+index 75ede75..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665925825.XANDER-DESKTOP.16572.6 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665933313.XANDER-DESKTOP.16572.7 b/logs/test_run5/PPO_0/events.out.tfevents.1665933313.XANDER-DESKTOP.16572.7
+deleted file mode 100644
+index 2718564..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665933313.XANDER-DESKTOP.16572.7 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665940690.XANDER-DESKTOP.16572.8 b/logs/test_run5/PPO_0/events.out.tfevents.1665940690.XANDER-DESKTOP.16572.8
+deleted file mode 100644
+index c518a29..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665940690.XANDER-DESKTOP.16572.8 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665947585.XANDER-DESKTOP.16572.9 b/logs/test_run5/PPO_0/events.out.tfevents.1665947585.XANDER-DESKTOP.16572.9
+deleted file mode 100644
+index 4495778..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665947585.XANDER-DESKTOP.16572.9 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665953184.XANDER-DESKTOP.16572.10 b/logs/test_run5/PPO_0/events.out.tfevents.1665953184.XANDER-DESKTOP.16572.10
+deleted file mode 100644
+index 483ca31..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665953184.XANDER-DESKTOP.16572.10 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665959717.XANDER-DESKTOP.16572.11 b/logs/test_run5/PPO_0/events.out.tfevents.1665959717.XANDER-DESKTOP.16572.11
+deleted file mode 100644
+index 8a892f2..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665959717.XANDER-DESKTOP.16572.11 and /dev/null differ
+diff --git a/logs/test_run5/PPO_0/events.out.tfevents.1665966536.XANDER-DESKTOP.16572.12 b/logs/test_run5/PPO_0/events.out.tfevents.1665966536.XANDER-DESKTOP.16572.12
+deleted file mode 100644
+index d74340c..0000000
+Binary files a/logs/test_run5/PPO_0/events.out.tfevents.1665966536.XANDER-DESKTOP.16572.12 and /dev/null differ
+diff --git a/logs/test_run6/PPO_0/events.out.tfevents.1665971847.XANDER-DESKTOP.9468.0 b/logs/test_run6/PPO_0/events.out.tfevents.1665971847.XANDER-DESKTOP.9468.0
+deleted file mode 100644
+index 8c3f216..0000000
+Binary files a/logs/test_run6/PPO_0/events.out.tfevents.1665971847.XANDER-DESKTOP.9468.0 and /dev/null differ
+diff --git a/logs/test_run6/PPO_0/events.out.tfevents.1665981664.XANDER-DESKTOP.9468.1 b/logs/test_run6/PPO_0/events.out.tfevents.1665981664.XANDER-DESKTOP.9468.1
+deleted file mode 100644
+index 23428c7..0000000
+Binary files a/logs/test_run6/PPO_0/events.out.tfevents.1665981664.XANDER-DESKTOP.9468.1 and /dev/null differ
+diff --git a/logs/test_run6/PPO_0/events.out.tfevents.1665990363.XANDER-DESKTOP.9468.2 b/logs/test_run6/PPO_0/events.out.tfevents.1665990363.XANDER-DESKTOP.9468.2
+deleted file mode 100644
+index 5e863a9..0000000
+Binary files a/logs/test_run6/PPO_0/events.out.tfevents.1665990363.XANDER-DESKTOP.9468.2 and /dev/null differ
+diff --git a/logs/test_run6/PPO_0/events.out.tfevents.1665998792.XANDER-DESKTOP.9468.3 b/logs/test_run6/PPO_0/events.out.tfevents.1665998792.XANDER-DESKTOP.9468.3
+deleted file mode 100644
+index 1760f69..0000000
+Binary files a/logs/test_run6/PPO_0/events.out.tfevents.1665998792.XANDER-DESKTOP.9468.3 and /dev/null differ
+diff --git a/logs/test_run6/PPO_0/events.out.tfevents.1666006670.XANDER-DESKTOP.9468.4 b/logs/test_run6/PPO_0/events.out.tfevents.1666006670.XANDER-DESKTOP.9468.4
+deleted file mode 100644
+index 3780723..0000000
+Binary files a/logs/test_run6/PPO_0/events.out.tfevents.1666006670.XANDER-DESKTOP.9468.4 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666012161.XANDER-DESKTOP.25964.0 b/logs/test_run7/PPO_0/events.out.tfevents.1666012161.XANDER-DESKTOP.25964.0
+deleted file mode 100644
+index 07431ee..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666012161.XANDER-DESKTOP.25964.0 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666012699.XANDER-DESKTOP.8084.0 b/logs/test_run7/PPO_0/events.out.tfevents.1666012699.XANDER-DESKTOP.8084.0
+deleted file mode 100644
+index 9107a90..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666012699.XANDER-DESKTOP.8084.0 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666013813.XANDER-DESKTOP.11384.0 b/logs/test_run7/PPO_0/events.out.tfevents.1666013813.XANDER-DESKTOP.11384.0
+deleted file mode 100644
+index fef7909..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666013813.XANDER-DESKTOP.11384.0 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666013859.XANDER-DESKTOP.13004.0 b/logs/test_run7/PPO_0/events.out.tfevents.1666013859.XANDER-DESKTOP.13004.0
+deleted file mode 100644
+index 41e449d..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666013859.XANDER-DESKTOP.13004.0 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666020514.XANDER-DESKTOP.13004.1 b/logs/test_run7/PPO_0/events.out.tfevents.1666020514.XANDER-DESKTOP.13004.1
+deleted file mode 100644
+index 96a3102..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666020514.XANDER-DESKTOP.13004.1 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666026586.XANDER-DESKTOP.13004.2 b/logs/test_run7/PPO_0/events.out.tfevents.1666026586.XANDER-DESKTOP.13004.2
+deleted file mode 100644
+index 4b2668e..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666026586.XANDER-DESKTOP.13004.2 and /dev/null differ
+diff --git a/logs/test_run7/PPO_0/events.out.tfevents.1666043165.XANDER-DESKTOP.28920.0 b/logs/test_run7/PPO_0/events.out.tfevents.1666043165.XANDER-DESKTOP.28920.0
+deleted file mode 100644
+index 612b7e2..0000000
+Binary files a/logs/test_run7/PPO_0/events.out.tfevents.1666043165.XANDER-DESKTOP.28920.0 and /dev/null differ
+diff --git a/logs/trainingZerg/PPO_0/events.out.tfevents.1670891287.XANDER-LAPTOP.16256.0 b/logs/trainingZerg/PPO_0/events.out.tfevents.1670891287.XANDER-LAPTOP.16256.0
+deleted file mode 100644
+index 4000ae5..0000000
+Binary files a/logs/trainingZerg/PPO_0/events.out.tfevents.1670891287.XANDER-LAPTOP.16256.0 and /dev/null differ
+diff --git a/models/trainingProtoss/25000.zip b/models/trainingProtoss/25000.zip
+new file mode 100644
+index 0000000..fe6a9c3
+Binary files /dev/null and b/models/trainingProtoss/25000.zip differ
+diff --git a/models/trainingProtoss/50000.zip b/models/trainingProtoss/50000.zip
+new file mode 100644
+index 0000000..266cecc
+Binary files /dev/null and b/models/trainingProtoss/50000.zip differ
+diff --git a/models/trainingTerran/25000.zip b/models/trainingTerran/25000.zip
+new file mode 100644
+index 0000000..1b0ee24
+Binary files /dev/null and b/models/trainingTerran/25000.zip differ
+diff --git a/models/trainingTerran/50000.zip b/models/trainingTerran/50000.zip
+new file mode 100644
+index 0000000..11dec7a
+Binary files /dev/null and b/models/trainingTerran/50000.zip differ
+diff --git a/state_rwd_action.pkl b/state_rwd_action.pkl
+index 0a898b8..8ff2407 100644
+Binary files a/state_rwd_action.pkl and b/state_rwd_action.pkl differ

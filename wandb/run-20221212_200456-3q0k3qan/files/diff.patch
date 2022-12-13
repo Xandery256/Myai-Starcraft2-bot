@@ -1,0 +1,23 @@
+diff --git a/Myai.py b/Myai.py
+index 063fa6a..4287fb6 100644
+--- a/Myai.py
++++ b/Myai.py
+@@ -486,7 +486,7 @@ class Myai(BotAI):
+ result = run_game(  # run_game is a function that runs the game.
+     maps.get("2000AtmospheresAIE"), # the map the agents will play on
+     [Bot(Race.Terran, Myai()), # runs my coded bot with the given race and agent object 
+-     Computer(Race.Zerg, Difficulty.Medium)], # runs a pre-built computer agent with the given race and difficulty.
++     Computer(Race.Zerg, Difficulty.Easy)], # runs a pre-built computer agent with the given race and difficulty.
+     realtime=False,
+ )
+ 
+diff --git a/__pycache__/sc2env.cpython-39.pyc b/__pycache__/sc2env.cpython-39.pyc
+index 1de4c7e..17990fe 100644
+Binary files a/__pycache__/sc2env.cpython-39.pyc and b/__pycache__/sc2env.cpython-39.pyc differ
+diff --git a/logs/trainingZerg/PPO_0/events.out.tfevents.1670891287.XANDER-LAPTOP.16256.0 b/logs/trainingZerg/PPO_0/events.out.tfevents.1670891287.XANDER-LAPTOP.16256.0
+deleted file mode 100644
+index 4000ae5..0000000
+Binary files a/logs/trainingZerg/PPO_0/events.out.tfevents.1670891287.XANDER-LAPTOP.16256.0 and /dev/null differ
+diff --git a/state_rwd_action.pkl b/state_rwd_action.pkl
+index 0a898b8..8ff2407 100644
+Binary files a/state_rwd_action.pkl and b/state_rwd_action.pkl differ

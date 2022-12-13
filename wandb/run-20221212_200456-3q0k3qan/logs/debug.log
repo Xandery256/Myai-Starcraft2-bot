@@ -1,0 +1,27 @@
+2022-12-12 20:04:56,992 INFO    MainThread:1960 [wandb_setup.py:_flush():68] Configure stats pid to 1960
+2022-12-12 20:04:56,992 INFO    MainThread:1960 [wandb_setup.py:_flush():68] Loading settings from C:\Users\ary93\.config\wandb\settings
+2022-12-12 20:04:56,992 INFO    MainThread:1960 [wandb_setup.py:_flush():68] Loading settings from C:\Users\ary93\Desktop\BJU Files\Year 4 S1\CpS 499\Myai-Starcraft2-bot\wandb\settings
+2022-12-12 20:04:56,992 INFO    MainThread:1960 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-12 20:04:56,992 INFO    MainThread:1960 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'C:\\Users\\ary93\\Desktop\\BJU Files\\Year 4 S1\\CpS 499\\Myai-Starcraft2-bot\\train.py'}
+2022-12-12 20:04:56,993 INFO    MainThread:1960 [wandb_init.py:_log_setup():476] Logging user logs to C:\Users\ary93\Desktop\BJU Files\Year 4 S1\CpS 499\Myai-Starcraft2-bot\wandb\run-20221212_200456-3q0k3qan\logs\debug.log
+2022-12-12 20:04:56,993 INFO    MainThread:1960 [wandb_init.py:_log_setup():477] Logging internal logs to C:\Users\ary93\Desktop\BJU Files\Year 4 S1\CpS 499\Myai-Starcraft2-bot\wandb\run-20221212_200456-3q0k3qan\logs\debug-internal.log
+2022-12-12 20:04:56,993 INFO    MainThread:1960 [wandb_init.py:init():516] calling init triggers
+2022-12-12 20:04:56,993 INFO    MainThread:1960 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'Model': 'v19', 'Machine': 'Main', 'policy': 'MlpPolicy', 'model_save_name': 'trainingZerg'}
+2022-12-12 20:04:56,994 INFO    MainThread:1960 [wandb_init.py:init():569] starting backend
+2022-12-12 20:04:56,994 INFO    MainThread:1960 [wandb_init.py:init():573] setting up manager
+2022-12-12 20:04:57,000 INFO    MainThread:1960 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-12-12 20:04:57,007 INFO    MainThread:1960 [wandb_init.py:init():580] backend started and connected
+2022-12-12 20:04:57,014 INFO    MainThread:1960 [wandb_init.py:init():658] updated telemetry
+2022-12-12 20:04:57,050 INFO    MainThread:1960 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-12 20:04:57,269 INFO    MainThread:1960 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-12 20:04:57,348 INFO    MainThread:1960 [wandb_run.py:_on_init():2010] got version response 
+2022-12-12 20:04:57,348 INFO    MainThread:1960 [wandb_init.py:init():728] starting run threads in backend
+2022-12-12 20:04:57,904 INFO    MainThread:1960 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-12 20:04:57,905 INFO    MainThread:1960 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-12 20:04:57,905 INFO    MainThread:1960 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-12 20:04:57,905 INFO    MainThread:1960 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-12 20:04:57,906 INFO    MainThread:1960 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-12 20:04:58,424 INFO    MainThread:1960 [wandb_run.py:_tensorboard_callback():1299] tensorboard callback: logs/trainingZerg/PPO_0, True
+2022-12-12 20:44:02,002 INFO    MainThread:1960 [wandb_run.py:_tensorboard_callback():1299] tensorboard callback: logs/trainingZerg/PPO_0, True
+2022-12-12 21:26:14,928 WARNING MsgRouterThr:1960 [router.py:message_loop():77] message_loop has been closed

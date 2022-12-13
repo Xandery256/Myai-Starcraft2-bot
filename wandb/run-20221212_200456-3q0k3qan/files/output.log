@@ -1,0 +1,550 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+On iteration:  0
+RESETTING ENVIRONMENT
+Logging to logs/trainingZerg/PPO_0
+RESETTING ENVIRONMENT
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 2.03e+03 |
+|    ep_rew_mean     | 548      |
+| time/              |          |
+|    fps             | 14       |
+|    iterations      | 1        |
+|    time_elapsed    | 143      |
+|    total_timesteps | 2048     |
+---------------------------------
+RESETTING ENVIRONMENT
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 1.98e+03     |
+|    ep_rew_mean          | 555          |
+| time/                   |              |
+|    fps                  | 12           |
+|    iterations           | 2            |
+|    time_elapsed         | 324          |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0033138515 |
+|    clip_fraction        | 0.0754       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.48        |
+|    explained_variance   | 0.000245     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 29.7         |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00411     |
+|    value_loss           | 992          |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 1.98e+03    |
+|    ep_rew_mean          | 555         |
+| time/                   |             |
+|    fps                  | 12          |
+|    iterations           | 3           |
+|    time_elapsed         | 489         |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.004849662 |
+|    clip_fraction        | 0.0394      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.48       |
+|    explained_variance   | 0.0503      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 93.8        |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00244    |
+|    value_loss           | 964         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.36e+03   |
+|    ep_rew_mean          | 567        |
+| time/                   |            |
+|    fps                  | 12         |
+|    iterations           | 4          |
+|    time_elapsed         | 680        |
+|    total_timesteps      | 8192       |
+| train/                  |            |
+|    approx_kl            | 0.04759969 |
+|    clip_fraction        | 0.336      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.47      |
+|    explained_variance   | -0.295     |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.138     |
+|    n_updates            | 30         |
+|    policy_gradient_loss | -0.0736    |
+|    value_loss           | 0.0287     |
+----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.36e+03    |
+|    ep_rew_mean          | 567         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 5           |
+|    time_elapsed         | 866         |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.028563011 |
+|    clip_fraction        | 0.289       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.44       |
+|    explained_variance   | 0.0136      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 107         |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.0174     |
+|    value_loss           | 919         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.3e+03     |
+|    ep_rew_mean          | 563         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 6           |
+|    time_elapsed         | 1057        |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.013388878 |
+|    clip_fraction        | 0.164       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.44       |
+|    explained_variance   | 0.0184      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 945         |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.0111     |
+|    value_loss           | 879         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.26e+03    |
+|    ep_rew_mean          | 565         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 7           |
+|    time_elapsed         | 1240        |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.014294751 |
+|    clip_fraction        | 0.172       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.44       |
+|    explained_variance   | 0.0129      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.83e+03    |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.01       |
+|    value_loss           | 850         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.22e+03    |
+|    ep_rew_mean          | 561         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 8           |
+|    time_elapsed         | 1428        |
+|    total_timesteps      | 16384       |
+| train/                  |             |
+|    approx_kl            | 0.018544095 |
+|    clip_fraction        | 0.166       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.45       |
+|    explained_variance   | 0.0157      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 235         |
+|    n_updates            | 70          |
+|    policy_gradient_loss | -0.012      |
+|    value_loss           | 820         |
+-----------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.22e+03   |
+|    ep_rew_mean          | 561        |
+| time/                   |            |
+|    fps                  | 11         |
+|    iterations           | 9          |
+|    time_elapsed         | 1585       |
+|    total_timesteps      | 18432      |
+| train/                  |            |
+|    approx_kl            | 0.01642989 |
+|    clip_fraction        | 0.147      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.42      |
+|    explained_variance   | 0.132      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 477        |
+|    n_updates            | 80         |
+|    policy_gradient_loss | -0.0093    |
+|    value_loss           | 807        |
+----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.52e+03    |
+|    ep_rew_mean          | 435         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 10          |
+|    time_elapsed         | 1750        |
+|    total_timesteps      | 20480       |
+| train/                  |             |
+|    approx_kl            | 0.040009104 |
+|    clip_fraction        | 0.34        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.43       |
+|    explained_variance   | 0.527       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.088      |
+|    n_updates            | 90          |
+|    policy_gradient_loss | -0.0719     |
+|    value_loss           | 0.107       |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.52e+03    |
+|    ep_rew_mean          | 435         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 11          |
+|    time_elapsed         | 1916        |
+|    total_timesteps      | 22528       |
+| train/                  |             |
+|    approx_kl            | 0.025185589 |
+|    clip_fraction        | 0.261       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.4        |
+|    explained_variance   | -0.00369    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 104         |
+|    n_updates            | 100         |
+|    policy_gradient_loss | -0.000322   |
+|    value_loss           | 787         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.59e+03    |
+|    ep_rew_mean          | 333         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 12          |
+|    time_elapsed         | 2098        |
+|    total_timesteps      | 24576       |
+| train/                  |             |
+|    approx_kl            | 0.059427276 |
+|    clip_fraction        | 0.483       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.36       |
+|    explained_variance   | 0.679       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.143      |
+|    n_updates            | 110         |
+|    policy_gradient_loss | -0.0966     |
+|    value_loss           | 0.0115      |
+-----------------------------------------
+RESETTING ENVIRONMENT
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.52e+03   |
+|    ep_rew_mean          | 353        |
+| time/                   |            |
+|    fps                  | 11         |
+|    iterations           | 13         |
+|    time_elapsed         | 2282       |
+|    total_timesteps      | 26624      |
+| train/                  |            |
+|    approx_kl            | 0.02538281 |
+|    clip_fraction        | 0.247      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.36      |
+|    explained_variance   | 0.00735    |
+|    learning_rate        | 0.0003     |
+|    loss                 | 500        |
+|    n_updates            | 120        |
+|    policy_gradient_loss | -0.00934   |
+|    value_loss           | 739        |
+----------------------------------------
+On iteration:  1
+Logging to logs/trainingZerg/PPO_0
+RESETTING ENVIRONMENT
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 2.48e+03 |
+|    ep_rew_mean     | 370      |
+| time/              |          |
+|    fps             | 16       |
+|    iterations      | 1        |
+|    time_elapsed    | 124      |
+|    total_timesteps | 28672    |
+---------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.48e+03    |
+|    ep_rew_mean          | 370         |
+| time/                   |             |
+|    fps                  | 12          |
+|    iterations           | 2           |
+|    time_elapsed         | 316         |
+|    total_timesteps      | 30720       |
+| train/                  |             |
+|    approx_kl            | 0.021648757 |
+|    clip_fraction        | 0.216       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.37       |
+|    explained_variance   | 0.0292      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 150         |
+|    n_updates            | 140         |
+|    policy_gradient_loss | -0.00794    |
+|    value_loss           | 687         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.56e+03    |
+|    ep_rew_mean          | 300         |
+| time/                   |             |
+|    fps                  | 11          |
+|    iterations           | 3           |
+|    time_elapsed         | 520         |
+|    total_timesteps      | 32768       |
+| train/                  |             |
+|    approx_kl            | 0.032291517 |
+|    clip_fraction        | 0.277       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.37       |
+|    explained_variance   | 0.372       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0876     |
+|    n_updates            | 150         |
+|    policy_gradient_loss | -0.0656     |
+|    value_loss           | 0.552       |
+-----------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.56e+03   |
+|    ep_rew_mean          | 300        |
+| time/                   |            |
+|    fps                  | 11         |
+|    iterations           | 4          |
+|    time_elapsed         | 742        |
+|    total_timesteps      | 34816      |
+| train/                  |            |
+|    approx_kl            | 0.01583053 |
+|    clip_fraction        | 0.16       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.37      |
+|    explained_variance   | 0.0494     |
+|    learning_rate        | 0.0003     |
+|    loss                 | 0.193      |
+|    n_updates            | 160        |
+|    policy_gradient_loss | -0.0175    |
+|    value_loss           | 678        |
+----------------------------------------
+RESETTING ENVIRONMENT
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.82e+03   |
+|    ep_rew_mean          | 243        |
+| time/                   |            |
+|    fps                  | 10         |
+|    iterations           | 5          |
+|    time_elapsed         | 972        |
+|    total_timesteps      | 36864      |
+| train/                  |            |
+|    approx_kl            | 0.05567612 |
+|    clip_fraction        | 0.467      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.29      |
+|    explained_variance   | -0.591     |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.128     |
+|    n_updates            | 170        |
+|    policy_gradient_loss | -0.0818    |
+|    value_loss           | 0.0229     |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.82e+03    |
+|    ep_rew_mean          | 243         |
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 6           |
+|    time_elapsed         | 1141        |
+|    total_timesteps      | 38912       |
+| train/                  |             |
+|    approx_kl            | 0.005435152 |
+|    clip_fraction        | 0.146       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.33       |
+|    explained_variance   | 0.307       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.7e+03     |
+|    n_updates            | 180         |
+|    policy_gradient_loss | -0.00492    |
+|    value_loss           | 703         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.87e+03    |
+|    ep_rew_mean          | 268         |
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 7           |
+|    time_elapsed         | 1363        |
+|    total_timesteps      | 40960       |
+| train/                  |             |
+|    approx_kl            | 0.030410817 |
+|    clip_fraction        | 0.217       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.31       |
+|    explained_variance   | 0.629       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0471     |
+|    n_updates            | 190         |
+|    policy_gradient_loss | -0.0457     |
+|    value_loss           | 0.923       |
+-----------------------------------------
+RESETTING ENVIRONMENT
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.84e+03    |
+|    ep_rew_mean          | 287         |
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 8           |
+|    time_elapsed         | 1570        |
+|    total_timesteps      | 43008       |
+| train/                  |             |
+|    approx_kl            | 0.028885739 |
+|    clip_fraction        | 0.239       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.3        |
+|    explained_variance   | 0.0308      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.38        |
+|    n_updates            | 200         |
+|    policy_gradient_loss | -0.0214     |
+|    value_loss           | 649         |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.84e+03    |
+|    ep_rew_mean          | 287         |
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 9           |
+|    time_elapsed         | 1763        |
+|    total_timesteps      | 45056       |
+| train/                  |             |
+|    approx_kl            | 0.028395709 |
+|    clip_fraction        | 0.239       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.31       |
+|    explained_variance   | 0.0357      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0122      |
+|    n_updates            | 210         |
+|    policy_gradient_loss | -0.0117     |
+|    value_loss           | 620         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.89e+03   |
+|    ep_rew_mean          | 240        |
+| time/                   |            |
+|    fps                  | 10         |
+|    iterations           | 10         |
+|    time_elapsed         | 1974       |
+|    total_timesteps      | 47104      |
+| train/                  |            |
+|    approx_kl            | 0.06667405 |
+|    clip_fraction        | 0.537      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.3       |
+|    explained_variance   | 0.883      |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.138     |
+|    n_updates            | 220        |
+|    policy_gradient_loss | -0.0998    |
+|    value_loss           | 0.0223     |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 2.89e+03    |
+|    ep_rew_mean          | 240         |
+| time/                   |             |
+|    fps                  | 10          |
+|    iterations           | 11          |
+|    time_elapsed         | 2164        |
+|    total_timesteps      | 49152       |
+| train/                  |             |
+|    approx_kl            | 0.013566239 |
+|    clip_fraction        | 0.117       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.3        |
+|    explained_variance   | 0.488       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.88        |
+|    n_updates            | 230         |
+|    policy_gradient_loss | -0.0221     |
+|    value_loss           | 665         |
+-----------------------------------------
+RESETTING ENVIRONMENT
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 2.94e+03   |
+|    ep_rew_mean          | 198        |
+| time/                   |            |
+|    fps                  | 10         |
+|    iterations           | 12         |
+|    time_elapsed         | 2361       |
+|    total_timesteps      | 51200      |
+| train/                  |            |
+|    approx_kl            | 0.06892336 |
+|    clip_fraction        | 0.523      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.25      |
+|    explained_variance   | 0.692      |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.134     |
+|    n_updates            | 240        |
+|    policy_gradient_loss | -0.0859    |
+|    value_loss           | 0.0298     |
+----------------------------------------
+RESETTING ENVIRONMENT
+Traceback (most recent call last):
+  File "C:\Users\ary93\Desktop\BJU Files\Year 4 S1\CpS 499\Myai-Starcraft2-bot\train.py", line 45, in <module>
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name=f"PPO")
+  File "C:\Python39\lib\site-packages\stable_baselines3\ppo\ppo.py", line 317, in learn
+    return super().learn(
+  File "C:\Python39\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 262, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Python39\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 181, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Python39\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "C:\Python39\lib\site-packages\stable_baselines3\common\vec_env\vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "C:\Python39\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 43, in step_wait
+    obs, self.buf_rews[env_idx], self.buf_dones[env_idx], self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "C:\Python39\lib\site-packages\stable_baselines3\common\monitor.py", line 94, in step
+    observation, reward, done, info = self.env.step(action)
+  File "C:\Users\ary93\Desktop\BJU Files\Year 4 S1\CpS 499\Myai-Starcraft2-bot\sc2env.py", line 27, in step
+    state_rwd_action = pickle.load(f)
+KeyboardInterrupt

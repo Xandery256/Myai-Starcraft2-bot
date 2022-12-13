@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.9.0",
+    "heartbeatAt": "2022-12-13T01:03:14.911476",
+    "startedAt": "2022-12-13T01:03:14.453481",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\ary93\\Desktop\\BJU Files\\Year 4 S1\\CpS 499\\Myai-Starcraft2-bot\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/Xandery256/Myai-Starcraft2-bot.git",
+        "commit": "28cd51bda745247759feac42299049040455cc03"
+    },
+    "email": "ary9302000@gmail.com",
+    "root": "C:/Users/ary93/Desktop/BJU Files/Year 4 S1/CpS 499/Myai-Starcraft2-bot",
+    "host": "XANDER-LAPTOP",
+    "username": "ary93",
+    "executable": "C:\\Python39\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2592.0,
+        "min": 0.0,
+        "max": 2592.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2592.0,
+            "min": 0.0,
+            "max": 2592.0
+        }
+    ],
+    "disk": {
+        "total": 475.69237899780273,
+        "used": 419.6454658508301
+    },
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660 Ti",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.912220001220703
+    }
+}
