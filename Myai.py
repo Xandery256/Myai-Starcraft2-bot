@@ -54,12 +54,11 @@ class Myai(BotAI):
         5: retreat (back to base)
         6: research infantry upgrades
         7: wait (do nothing)
+        8: build factory (evenly)
+        9: build vehicles (evenly)
+        10: build starport (evenly)
+        11: build aircraft (evenly)
         '''
-        # 8: build factory (evenly)
-        # 9: build vehicles (evenly)
-        # 10: build starport (evenly)
-        # 11: build aircraft (evenly)
-        # '''
 
         # 0: expand (ie: move to next spot, or build workers)
         if action == 0:
@@ -79,7 +78,6 @@ class Myai(BotAI):
                             if commandcenter.is_idle and self.can_afford(UnitTypeId.SCV):
                                 commandcenter.train(UnitTypeId.SCV)
                                 found_something = True
-                        # have we built enough refineries?
                         # find vespene geysers
                         for geyser in self.vespene_geyser.closer_than(10, commandcenter):
                             # build refinery if there isn't one already:
@@ -94,37 +92,42 @@ class Myai(BotAI):
             except Exception as e:
                 print(e)
                 print("Expanding is buggy")
-        #1: build production (or up to one) (evenly)
+        #1: build barracks (or up to one) (evenly)
         elif action == 1:
             try:
-                cc = random.choice(self.townhalls)
-                production = random.choice([UnitTypeId.BARRACKS, UnitTypeId.FACTORY, UnitTypeId.STARPORT])
+                cc = random.choice(self.townhalls) if len(self.townhalls) != 0 else self.start_location
+                # production = random.choice([UnitTypeId.BARRACKS, UnitTypeId.FACTORY, UnitTypeId.STARPORT])
+                production = UnitTypeId.BARRACKS
                 # if we can afford it:
                 if self.can_afford(production) and self.already_pending(production) == 0:
                     # build BARRACKS
                     pos = cc.position.towards(self.enemy_start_locations[0], random.randrange(3,10))
-                    await self.build(production, near=pos)
+                    if len(self.structures(UnitTypeId.BARRACKS)) < 13:
+                        await self.build(production, near=pos)
             except Exception as e:
                 print(e)
+                print("Barracks is buggy")
         #2: build army (random production)
         elif action == 2:
             try:
-                armyUnit = random.choice([UnitTypeId.MARINE, UnitTypeId.HELLION, UnitTypeId.MEDIVAC, UnitTypeId.VIKING])
-                if self.can_afford(armyUnit): 
-                    if armyUnit == UnitTypeId.MARINE:
+                # armyUnit = random.choice([UnitTypeId.MARINE, UnitTypeId.HELLION, UnitTypeId.MEDIVAC, UnitTypeId.VIKING])
+                # if self.can_afford(armyUnit):
+                if self.can_afford(UnitTypeId.MARINE):  
+                    # if armyUnit == UnitTypeId.MARINE:
                         for bar in self.structures(UnitTypeId.BARRACKS).ready.idle:
-                            if self.can_afford(armyUnit):
-                                bar.train(armyUnit)
-                    if armyUnit == UnitTypeId.HELLION:
-                        for bar in self.structures(UnitTypeId.FACTORY).ready.idle:
-                            if self.can_afford(armyUnit):
-                                bar.train(armyUnit)
-                    if armyUnit == UnitTypeId.MEDIVAC or armyUnit == UnitTypeId.VIKING:
-                        for bar in self.structures(UnitTypeId.STARPORT).ready.idle:
-                            if self.can_afford(armyUnit):
-                                bar.train(armyUnit)                
+                            if self.can_afford(UnitTypeId.MARINE):
+                                bar.train(UnitTypeId.MARINE)
+                    # if armyUnit == UnitTypeId.HELLION:
+                    #     for bar in self.structures(UnitTypeId.FACTORY).ready.idle:
+                    #         if self.can_afford(armyUnit):
+                    #             bar.train(armyUnit)
+                    # if armyUnit == UnitTypeId.MEDIVAC or armyUnit == UnitTypeId.VIKING:
+                    #     for bar in self.structures(UnitTypeId.STARPORT).ready.idle:
+                    #         if self.can_afford(armyUnit):
+                    #             bar.train(armyUnit)                
             except Exception as e:
                 print(e)
+                print("Infantry is buggy")
         #3: send scout
         elif action == 3:
             # are there any idle workers:
@@ -151,34 +154,36 @@ class Myai(BotAI):
                 # take army and attack!
                 fighters = self.units(UnitTypeId.MARINE)
                 fighters.extend(self.units(UnitTypeId.HELLION))
-                fighters.extend(self.units(UnitTypeId.VIKING))
-                for unit in fighters.idle:
-                # for unit in self.units().idle:
-                    # if we can attack:
-                    if self.enemy_units.closer_than(7, unit):
-                        # attack!
-                        unit.attack(random.choice(self.enemy_units.closer_than(7, unit)))
-                    # if we can attack:
-                    elif self.enemy_structures.closer_than(7, unit):
-                        # attack!
-                        unit.attack(random.choice(self.enemy_structures.closer_than(7, unit)))
-                    # any enemy units:
-                    elif self.enemy_units:
-                        # attack!
-                        unit.attack(random.choice(self.enemy_units))
-                    # any enemy structures:
-                    elif self.enemy_structures:
-                        # attack!
-                        unit.attack(random.choice(self.enemy_structures))
-                    # if we can attack:
-                    elif self.enemy_start_locations:
-                        # attack!
-                        unit.attack(self.enemy_start_locations[0])
-
-                for unit in self.units(UnitTypeId.MEDIVAC):
-                    unit.move(random.choice(self.units(UnitTypeId.MARINE)))
+                fighters.extend(self.units(UnitTypeId.VIKINGFIGHTER))
+                if len(fighters) > 0:
+                    for unit in fighters.idle:
+                    # for unit in self.units().idle:
+                        # if we can attack:
+                        if self.enemy_units.closer_than(10, unit):
+                            # attack!
+                            unit.attack(random.choice(self.enemy_units.closer_than(10, unit)))
+                        # if we can attack:
+                        elif self.enemy_structures.closer_than(10, unit):
+                            # attack!
+                            unit.attack(random.choice(self.enemy_structures.closer_than(10, unit)))
+                        # any enemy units:
+                        elif self.enemy_units:
+                            # attack!
+                            unit.attack(random.choice(self.enemy_units))
+                        # any enemy structures:
+                        elif self.enemy_structures:
+                            # attack!
+                            unit.attack(random.choice(self.enemy_structures))
+                        # if we can attack:
+                        elif self.enemy_start_locations:
+                            # attack!
+                            unit.attack(self.enemy_start_locations[0])
+                if len(self.units(UnitTypeId.MEDIVAC)) > 0:
+                    for unit in self.units(UnitTypeId.MEDIVAC):
+                        unit.move(random.choice(self.units(UnitTypeId.MARINE)))
             except Exception as e:
                 print(e)
+                print("Attacking is buggy")
         #5: retreat (back to base)
         elif action == 5:
             try:
@@ -189,7 +194,8 @@ class Myai(BotAI):
                             ccpos.append(cc.position)
                         avepos = Point2.center(ccpos) if len(ccpos) > 0 else self.start_location
                         pos = avepos.position.towards(self.enemy_start_locations[0], random.randrange(5,10))
-                        marine.move(pos)
+                        if(marine.health_percentage < .6):
+                            marine.move(pos)
                 if self.units(UnitTypeId.HELLION).amount > 0:
                     for hellion in self.units(UnitTypeId.HELLION):
                         ccpos = []
@@ -197,7 +203,8 @@ class Myai(BotAI):
                             ccpos.append(cc.position)
                         avepos = Point2.center(ccpos) if len(ccpos) > 0 else self.start_location
                         pos = avepos.position.towards(self.enemy_start_locations[0], random.randrange(5,10))
-                        hellion.move(pos)
+                        if(hellion.health_percentage < .6):
+                            hellion.move(pos)
                 if self.units(UnitTypeId.MEDIVAC).amount > 0:
                     for medivac in self.units(UnitTypeId.MEDIVAC):
                         ccpos = []
@@ -205,7 +212,8 @@ class Myai(BotAI):
                             ccpos.append(cc.position)
                         avepos = Point2.center(ccpos) if len(ccpos) > 0 else self.start_location
                         pos = avepos.position.towards(self.enemy_start_locations[0], random.randrange(5,10))
-                        medivac.move(pos)
+                        if(medivac.health_percentage < .6):
+                            medivac.move(pos)
                 if self.units(UnitTypeId.VIKING).amount > 0:
                     for viking in self.units(UnitTypeId.VIKING):
                         ccpos = []
@@ -213,7 +221,8 @@ class Myai(BotAI):
                             ccpos.append(cc.position)
                         avepos = Point2.center(ccpos) if len(ccpos) > 0 else self.start_location
                         pos = avepos.position.towards(self.enemy_start_locations[0], random.randrange(5,10))
-                        viking.move(pos)
+                        if(viking.health_percentage < .6):
+                            viking.move(pos)
             except Exception as e:
                 print(e)
                 print("Moving is buggy")
@@ -249,63 +258,70 @@ class Myai(BotAI):
         #7: do nothing
         elif action == 7:
             waiting = 0
-        #8: build factory (or up to one) (evenly)
-        # elif action == 8:
-        #     try:
-        #         cc = random.choice(self.townhalls)
-        #         if self.can_afford(UnitTypeId.FACTORY) and self.already_pending(UnitTypeId.FACTORY) == 0:
-        #             # build FACTORY
-        #             pos = cc.position.towards(self.enemy_start_locations[0], random.randrange(2,10))
-        #             await self.build(UnitTypeId.FACTORY, near=pos)
-        #         # for factory in self.structures(UnitTypeId.FACTORY):
-        #         #     if self.can_afford(UnitTypeId.TECHLAB):
-        #         #         await factory.train(UnitTypeId.TECHLAB)
-        #     except Exception as e:
-        #         print(e)
-        # #9: build army (random FACTORY)
-        # elif action == 9:
-        #     try:
-        #         # if self.can_afford(UnitTypeId.SIEGETANK):
-        #         #     for fact in self.structures(UnitTypeId.FACTORY).ready.idle:
-        #         #         if self.can_afford(UnitTypeId.SIEGETANK):
-        #         #             fact.train(UnitTypeId.SIEGETANK)
-        #         if self.can_afford(UnitTypeId.HELLION):
-        #             for fact in self.structures(UnitTypeId.FACTORY).ready.idle:
-        #                 if self.can_afford(UnitTypeId.HELLION):
-        #                     fact.train(UnitTypeId.HELLION)
-            
-        #     except Exception as e:
-        #         print(e)
-        # #10: build starport (or up to one) (evenly)
-        # elif action == 10:
-        #     try:
-        #         cc = random.choice(self.townhalls)
-        #         if self.can_afford(UnitTypeId.STARPORT) and self.already_pending(UnitTypeId.STARPORT) == 0:
-        #             # build STARPORT
-        #             pos = cc.position.towards(self.enemy_start_locations[0], random.randrange(2,10))
-        #             await self.build(UnitTypeId.STARPORT, near=pos)
-        #         # for starport in self.structures(UnitTypeId.STARPORT):
-        #         #     if self.can_afford(UnitTypeId.TECHLAB):
-        #         #         await starport.train(UnitTypeId.TECHLAB)
-        #     except Exception as e:
-        #         print(e)
-        # #9: build army (random STARPORT)
-        # elif action == 11:
-        #     try:
-        #         aircraft = random.choice([UnitTypeId.MEDIVAC, UnitTypeId.VIKING])
-        #         if self.can_afford(aircraft):
-        #             for starport in self.structures(UnitTypeId.STARPORT).ready.idle:
-        #                 if self.can_afford(aircraft):
-        #                     starport.train(aircraft)
-        #         # elif self.can_afford(UnitTypeId.VIKING):
-        #         #     for starport in self.structures(UnitTypeId.STARPORT).ready.idle:
-        #         #         if self.can_afford(UnitTypeId.VIKING):
-        #         #             starport.train(UnitTypeId.VIKING)
-            # except Exception as e:
-                # print(e)
+        # 8: build factory (or up to one) (evenly)
+        elif action == 8:
+            try:
+                cc = random.choice(self.townhalls) if len(self.townhalls) != 0 else self.start_location
+                if self.can_afford(UnitTypeId.FACTORY) and self.already_pending(UnitTypeId.FACTORY) == 0:
+                    # build FACTORY
+                    pos = cc.position.towards(self.enemy_start_locations[0], random.randrange(2,10))
+                    if len(self.structures(UnitTypeId.FACTORY)) < 7:
+                        await self.build(UnitTypeId.FACTORY, near=pos)
+                # for factory in self.structures(UnitTypeId.FACTORY):
+                #     if self.can_afford(UnitTypeId.TECHLAB):
+                #         await factory.train(UnitTypeId.TECHLAB)
+            except Exception as e:
+                print(e)
+                print("Factory is buggy")
+        #9: build army (random FACTORY)
+        elif action == 9:
+            try:
+                # if self.can_afford(UnitTypeId.SIEGETANK):
+                #     for fact in self.structures(UnitTypeId.FACTORY).ready.idle:
+                #         if self.can_afford(UnitTypeId.SIEGETANK):
+                #             fact.train(UnitTypeId.SIEGETANK)
+                if self.can_afford(UnitTypeId.HELLION):
+                    for fact in self.structures(UnitTypeId.FACTORY).ready.idle:
+                        if self.can_afford(UnitTypeId.HELLION):
+                            fact.train(UnitTypeId.HELLION)
+            except Exception as e:
+                print(e)
+                print("Vehicle is buggy")
+        #10: build starport (or up to one) (evenly)
+        elif action == 10:
+            try:
+                cc = random.choice(self.townhalls) if len(self.townhalls) != 0 else self.start_location
+                if self.can_afford(UnitTypeId.STARPORT) and self.already_pending(UnitTypeId.STARPORT) == 0:
+                    # build STARPORT
+                    pos = cc.position.towards(self.enemy_start_locations[0], random.randrange(2,10))
+                    if len(self.structures(UnitTypeId.STARPORT)) < 7:
+                        await self.build(UnitTypeId.STARPORT, near=pos)
+                # for starport in self.structures(UnitTypeId.STARPORT):
+                #     if self.can_afford(UnitTypeId.TECHLAB):
+                #         await starport.train(UnitTypeId.TECHLAB)
+            except Exception as e:
+                print(e)
+                print("Starport is buggy")
+        #9: build army (random STARPORT)
+        elif action == 11:
+            try:
+                aircraft = UnitTypeId.MEDIVAC if random.randint(0,1) == 0 else UnitTypeId.VIKINGFIGHTER
+                if self.can_afford(aircraft):
+                    for starport in self.structures(UnitTypeId.STARPORT).ready.idle:
+                        if self.can_afford(aircraft):
+                            starport.train(aircraft)
+                # elif self.can_afford(UnitTypeId.VIKING):
+                #     for starport in self.structures(UnitTypeId.STARPORT).ready.idle:
+                #         if self.can_afford(UnitTypeId.VIKING):
+                #             starport.train(UnitTypeId.VIKING)
+            except Exception as e:
+                print("Aircraft is buggy")
+                print(type(e))
+                print(e)
+                print("Aircraft is still buggy")
+
 
         map = np.zeros((self.game_info.map_size[0], self.game_info.map_size[1], 3), dtype=np.uint8)
-
         # draw the minerals:
         for mineral in self.mineral_field:
             pos = mineral.position
@@ -405,6 +421,13 @@ class Myai(BotAI):
                 # if hellion is attacking and is in range of enemy unit:
                 if hellion.is_attacking and hellion.target_in_range:
                     if self.enemy_units.closer_than(5, hellion) or self.enemy_structures.closer_than(5, hellion):
+                        # reward += 0.005 # original was 0.005, decent results, but let's 3x it. 
+                        reward += 0.015  
+                        attack_count += 1
+            for viking in self.units(UnitTypeId.VIKINGFIGHTER):
+                # if viking is attacking and is in range of enemy unit:
+                if viking.is_attacking and viking.target_in_range:
+                    if self.enemy_units.closer_than(8, viking) or self.enemy_structures.closer_than(8, viking):
                         # reward += 0.005 # original was 0.005, decent results, but let's 3x it. 
                         reward += 0.015  
                         attack_count += 1

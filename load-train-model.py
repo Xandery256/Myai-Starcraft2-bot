@@ -6,14 +6,14 @@ from wandb.integration.sb3 import WandbCallback
 import wandb
 
 
-LOAD_MODEL = "models/test_run8/200000.zip"
+LOAD_MODEL = "models/trainingZerg/50000.zip"
 # Environment:
 env = Sc2Env()
 
 # load the model:
 model = PPO.load(LOAD_MODEL, env=env)
 
-model_name = f"test_run5"
+model_name = f"trainingZerg"
 
 models_dir = f"models/{model_name}/"
 logdir = f"logs/{model_name}/"
@@ -36,7 +36,7 @@ run = wandb.init(
 
 
 # further train:
-TIMESTEPS = 100000
+TIMESTEPS = 10000
 iters = 0
 while True:
 	print("On iteration: ", iters)

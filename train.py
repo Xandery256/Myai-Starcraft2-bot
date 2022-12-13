@@ -6,7 +6,7 @@ from wandb.integration.sb3 import WandbCallback
 import wandb
 
 
-model_name = f"test_run8"
+model_name = f"trainingZerg"
 
 models_dir = f"models/{model_name}/"
 logdir = f"logs/{model_name}/"
@@ -37,7 +37,7 @@ env = Sc2Env()
 
 model = PPO('MlpPolicy', env, verbose=1, tensorboard_log=logdir)
 
-TIMESTEPS = 100000
+TIMESTEPS = 25000
 iters = 0
 while True:
     print("On iteration: ", iters)
